@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Workspace>
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FixtureManager">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.14.1-2</Version>
+  <Author>Robbie</Author>
+ </Creator>
+ <Engine>
+  <InputOutputMap>
+   <BeatGenerator BeatType="Disabled" BPM="0"/>
+   <Universe Name="Universe 1" ID="0"/>
+   <Universe Name="Universe 2" ID="1"/>
+   <Universe Name="Universe 3" ID="2">
+    <Input Plugin="MIDI" UID="None" Line="0"/>
+   </Universe>
+   <Universe Name="Universe 4" ID="3">
+    <Input Plugin="HID" UID="None" Line="0" Profile="Microsoft XBox 360 Controller"/>
+   </Universe>
+  </InputOutputMap>
+  <Fixture>
+   <Manufacturer>Orion Effects Lighting</Manufacturer>
+   <Model>Polaris 2</Model>
+   <Mode>10ch</Mode>
+   <ID>0</ID>
+   <Name>Polaris 2 #1</Name>
+   <Universe>0</Universe>
+   <Address>0</Address>
+   <Channels>10</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Orion Effects Lighting</Manufacturer>
+   <Model>Polaris 2</Model>
+   <Mode>10ch</Mode>
+   <ID>1</ID>
+   <Name>Polaris 2 #2</Name>
+   <Universe>0</Universe>
+   <Address>10</Address>
+   <Channels>10</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Orion Effects Lighting</Manufacturer>
+   <Model>Polaris 2</Model>
+   <Mode>10ch</Mode>
+   <ID>2</ID>
+   <Name>Polaris 2 #3</Name>
+   <Universe>0</Universe>
+   <Address>20</Address>
+   <Channels>10</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>American DJ</Manufacturer>
+   <Model>Stealth Spot</Model>
+   <Mode>15 Channel Mode</Mode>
+   <ID>5</ID>
+   <Name>Stealth Spot #1</Name>
+   <Universe>0</Universe>
+   <Address>30</Address>
+   <Channels>15</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>American DJ</Manufacturer>
+   <Model>Stealth Spot</Model>
+   <Mode>15 Channel Mode</Mode>
+   <ID>6</ID>
+   <Name>Stealth Spot #2</Name>
+   <Universe>0</Universe>
+   <Address>45</Address>
+   <Channels>15</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>American DJ</Manufacturer>
+   <Model>Stealth Spot</Model>
+   <Mode>15 Channel Mode</Mode>
+   <ID>7</ID>
+   <Name>Stealth Spot #3</Name>
+   <Universe>0</Universe>
+   <Address>60</Address>
+   <Channels>15</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>American DJ</Manufacturer>
+   <Model>Stealth Spot</Model>
+   <Mode>15 Channel Mode</Mode>
+   <ID>8</ID>
+   <Name>Stealth Spot #4</Name>
+   <Universe>0</Universe>
+   <Address>75</Address>
+   <Channels>15</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>American DJ</Manufacturer>
+   <Model>UV Flood 36</Model>
+   <Mode>3 Channel Mode</Mode>
+   <ID>9</ID>
+   <Name>UV Flood 36 #1</Name>
+   <Universe>0</Universe>
+   <Address>90</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>American DJ</Manufacturer>
+   <Model>UV Flood 36</Model>
+   <Mode>3 Channel Mode</Mode>
+   <ID>10</ID>
+   <Name>UV Flood 36 #2</Name>
+   <Universe>0</Universe>
+   <Address>93</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>American DJ</Manufacturer>
+   <Model>UV Flood 36</Model>
+   <Mode>3 Channel Mode</Mode>
+   <ID>11</ID>
+   <Name>UV Flood 36 #3</Name>
+   <Universe>0</Universe>
+   <Address>96</Address>
+   <Channels>3</Channels>
+  </Fixture>
+ </Engine>
+ <VirtualConsole>
+  <Frame Caption="">
+   <Appearance>
+    <FrameStyle>None</FrameStyle>
+    <ForegroundColor>Default</ForegroundColor>
+    <BackgroundColor>Default</BackgroundColor>
+    <BackgroundImage>None</BackgroundImage>
+    <Font>Default</Font>
+   </Appearance>
+  </Frame>
+  <Properties>
+   <Size Width="1920" Height="1080"/>
+   <GrandMaster ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal"/>
+  </Properties>
+ </VirtualConsole>
+ <SimpleDesk>
+  <Engine/>
+ </SimpleDesk>
+</Workspace>
