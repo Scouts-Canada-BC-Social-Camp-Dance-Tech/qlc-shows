@@ -15,7 +15,7 @@
     <Input Plugin="MIDI" UID="None" Line="0"/>
    </Universe>
    <Universe Name="Universe 4" ID="3">
-    <Input Plugin="HID" UID="None" Line="0" Profile="Microsoft XBox 360 Controller"/>
+    <Input Plugin="HID" UID="None" Line="0"/>
    </Universe>
   </InputOutputMap>
   <Fixture>
@@ -23,7 +23,7 @@
    <Model>Polaris 2</Model>
    <Mode>10ch</Mode>
    <ID>0</ID>
-   <Name>Polaris 2 #1</Name>
+   <Name>Polaris 2 #1 - USL</Name>
    <Universe>0</Universe>
    <Address>0</Address>
    <Channels>10</Channels>
@@ -33,7 +33,7 @@
    <Model>Polaris 2</Model>
    <Mode>10ch</Mode>
    <ID>1</ID>
-   <Name>Polaris 2 #2</Name>
+   <Name>Polaris 2 #2 - USR</Name>
    <Universe>0</Universe>
    <Address>10</Address>
    <Channels>10</Channels>
@@ -43,17 +43,37 @@
    <Model>Polaris 2</Model>
    <Mode>10ch</Mode>
    <ID>2</ID>
-   <Name>Polaris 2 #3</Name>
+   <Name>Polaris 2 #3 - DS</Name>
    <Universe>0</Universe>
    <Address>20</Address>
    <Channels>10</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Yorkville Sound</Manufacturer>
+   <Model>LP-LED4PRO</Model>
+   <Mode>28ch</Mode>
+   <ID>3</ID>
+   <Name>LP-LED4PRO #1 - USL</Name>
+   <Universe>0</Universe>
+   <Address>99</Address>
+   <Channels>28</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Yorkville Sound</Manufacturer>
+   <Model>LP-LED4PRO</Model>
+   <Mode>28ch</Mode>
+   <ID>4</ID>
+   <Name>LP-LED4PRO #2 - USR</Name>
+   <Universe>0</Universe>
+   <Address>140</Address>
+   <Channels>28</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>American DJ</Manufacturer>
    <Model>Stealth Spot</Model>
    <Mode>15 Channel Mode</Mode>
    <ID>5</ID>
-   <Name>Stealth Spot #1</Name>
+   <Name>Stealth Spot #1 - USL outside</Name>
    <Universe>0</Universe>
    <Address>30</Address>
    <Channels>15</Channels>
@@ -63,7 +83,7 @@
    <Model>Stealth Spot</Model>
    <Mode>15 Channel Mode</Mode>
    <ID>6</ID>
-   <Name>Stealth Spot #2</Name>
+   <Name>Stealth Spot #2 - USL inside</Name>
    <Universe>0</Universe>
    <Address>45</Address>
    <Channels>15</Channels>
@@ -73,7 +93,7 @@
    <Model>Stealth Spot</Model>
    <Mode>15 Channel Mode</Mode>
    <ID>7</ID>
-   <Name>Stealth Spot #3</Name>
+   <Name>Stealth Spot #3 - USR inside</Name>
    <Universe>0</Universe>
    <Address>60</Address>
    <Channels>15</Channels>
@@ -83,7 +103,7 @@
    <Model>Stealth Spot</Model>
    <Mode>15 Channel Mode</Mode>
    <ID>8</ID>
-   <Name>Stealth Spot #4</Name>
+   <Name>Stealth Spot #4 - USR outside</Name>
    <Universe>0</Universe>
    <Address>75</Address>
    <Channels>15</Channels>
@@ -93,7 +113,7 @@
    <Model>UV Flood 36</Model>
    <Mode>3 Channel Mode</Mode>
    <ID>9</ID>
-   <Name>UV Flood 36 #1</Name>
+   <Name>UV Flood 36 #1 - USL</Name>
    <Universe>0</Universe>
    <Address>90</Address>
    <Channels>3</Channels>
@@ -103,7 +123,7 @@
    <Model>UV Flood 36</Model>
    <Mode>3 Channel Mode</Mode>
    <ID>10</ID>
-   <Name>UV Flood 36 #2</Name>
+   <Name>UV Flood 36 #2 - USR</Name>
    <Universe>0</Universe>
    <Address>93</Address>
    <Channels>3</Channels>
@@ -113,10 +133,20 @@
    <Model>UV Flood 36</Model>
    <Mode>3 Channel Mode</Mode>
    <ID>11</ID>
-   <Name>UV Flood 36 #3</Name>
+   <Name>UV Flood 36 #3 - DS</Name>
    <Universe>0</Universe>
    <Address>96</Address>
    <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Yorkville Sound</Manufacturer>
+   <Model>LP-LED4PRO</Model>
+   <Mode>28ch</Mode>
+   <ID>12</ID>
+   <Name>LP-LED4PRO #3 - DS</Name>
+   <Universe>0</Universe>
+   <Address>180</Address>
+   <Channels>28</Channels>
   </Fixture>
  </Engine>
  <VirtualConsole>
