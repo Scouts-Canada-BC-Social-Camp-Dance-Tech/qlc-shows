@@ -15,7 +15,7 @@
     <Input Plugin="MIDI" UID="None" Line="0"/>
    </Universe>
    <Universe Name="Universe 4" ID="3">
-    <Input Plugin="HID" UID="None" Line="0"/>
+    <Input Plugin="HID" UID="None" Line="0" Profile="Akai MPD218"/>
    </Universe>
   </InputOutputMap>
   <Fixture>
