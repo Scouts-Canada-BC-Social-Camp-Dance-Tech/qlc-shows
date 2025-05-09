@@ -50,23 +50,23 @@
   </Fixture>
   <Fixture>
    <Manufacturer>Yorkville Sound</Manufacturer>
-   <Model>LP-LED4PRO</Model>
-   <Mode>28ch</Mode>
+   <Model>LP-LED4X</Model>
+   <Mode>20ch</Mode>
    <ID>3</ID>
-   <Name>LP-LED4PRO #1 - USL</Name>
+   <Name>LP-LED4X #1 - USL</Name>
    <Universe>0</Universe>
-   <Address>99</Address>
-   <Channels>28</Channels>
+   <Address>90</Address>
+   <Channels>20</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>Yorkville Sound</Manufacturer>
-   <Model>LP-LED4PRO</Model>
-   <Mode>28ch</Mode>
+   <Model>LP-LED4X</Model>
+   <Mode>20ch</Mode>
    <ID>4</ID>
-   <Name>LP-LED4PRO #2 - USR</Name>
+   <Name>LP-LED4X #2 - USR</Name>
    <Universe>0</Universe>
-   <Address>140</Address>
-   <Channels>28</Channels>
+   <Address>122</Address>
+   <Channels>20</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>American DJ</Manufacturer>
@@ -109,44 +109,44 @@
    <Channels>15</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>American DJ</Manufacturer>
-   <Model>UV Flood 36</Model>
-   <Mode>3 Channel Mode</Mode>
-   <ID>9</ID>
-   <Name>UV Flood 36 #1 - USL</Name>
-   <Universe>0</Universe>
-   <Address>90</Address>
-   <Channels>3</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>American DJ</Manufacturer>
-   <Model>UV Flood 36</Model>
-   <Mode>3 Channel Mode</Mode>
-   <ID>10</ID>
-   <Name>UV Flood 36 #2 - USR</Name>
-   <Universe>0</Universe>
-   <Address>93</Address>
-   <Channels>3</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>American DJ</Manufacturer>
-   <Model>UV Flood 36</Model>
-   <Mode>3 Channel Mode</Mode>
-   <ID>11</ID>
-   <Name>UV Flood 36 #3 - DS</Name>
-   <Universe>0</Universe>
-   <Address>96</Address>
-   <Channels>3</Channels>
-  </Fixture>
-  <Fixture>
    <Manufacturer>Yorkville Sound</Manufacturer>
-   <Model>LP-LED4PRO</Model>
-   <Mode>28ch</Mode>
-   <ID>12</ID>
-   <Name>LP-LED4PRO #3 - DS</Name>
+   <Model>LP-LED4X</Model>
+   <Mode>20ch</Mode>
+   <ID>9</ID>
+   <Name>LP-LED4X #3 - DS</Name>
    <Universe>0</Universe>
-   <Address>180</Address>
-   <Channels>28</Channels>
+   <Address>154</Address>
+   <Channels>20</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Orion Effects Lighting</Manufacturer>
+   <Model>ORCAN4</Model>
+   <Mode>10ch</Mode>
+   <ID>12</ID>
+   <Name>ORCAN4 #1</Name>
+   <Universe>0</Universe>
+   <Address>186</Address>
+   <Channels>10</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Orion Effects Lighting</Manufacturer>
+   <Model>ORCAN4</Model>
+   <Mode>10ch</Mode>
+   <ID>13</ID>
+   <Name>ORCAN4 #2</Name>
+   <Universe>0</Universe>
+   <Address>196</Address>
+   <Channels>10</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Orion Effects Lighting</Manufacturer>
+   <Model>ORCAN4</Model>
+   <Mode>10ch</Mode>
+   <ID>14</ID>
+   <Name>ORCAN4 #3</Name>
+   <Universe>0</Universe>
+   <Address>206</Address>
+   <Channels>10</Channels>
   </Fixture>
  </Engine>
  <VirtualConsole>
@@ -154,10 +154,119 @@
    <Appearance>
     <FrameStyle>None</FrameStyle>
     <ForegroundColor>Default</ForegroundColor>
-    <BackgroundColor>Default</BackgroundColor>
+    <BackgroundColor>4283453520</BackgroundColor>
     <BackgroundImage>None</BackgroundImage>
     <Font>Default</Font>
    </Appearance>
+   <Frame Caption="Stealth Spots" ID="0">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>4285558896</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="False" X="10" Y="10" Width="490" Height="335"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Multipage PagesNum="1" CurrentPage="0"/>
+    <Shortcut Page="0" Name="Page: 1"/>
+    <PagesLoop>True</PagesLoop>
+    <XYPad Caption="SL Spots" ID="1" InvertedAppearance="0">
+     <WindowState Visible="False" X="10" Y="45" Width="230" Height="230"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4294967295</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Fixture ID="5" Head="0">
+      <Axis ID="X" LowLimit="0" HighLimit="1" Reverse="False"/>
+      <Axis ID="Y" LowLimit="0" HighLimit="1" Reverse="False"/>
+     </Fixture>
+     <Fixture ID="6" Head="0">
+      <Axis ID="X" LowLimit="0" HighLimit="1" Reverse="False"/>
+      <Axis ID="Y" LowLimit="0" HighLimit="1" Reverse="False"/>
+     </Fixture>
+     <Pan Position="0">
+      <Input Universe="3" Channel="3"/>
+     </Pan>
+     <Tilt Position="0">
+      <Input Universe="3" Channel="9"/>
+     </Tilt>
+     <Width>
+      <Input Universe="3" Channel="14"/>
+     </Width>
+     <Height>
+      <Input Universe="3" Channel="15"/>
+     </Height>
+    </XYPad>
+    <XYPad Caption="SR Spots" ID="2" InvertedAppearance="0">
+     <WindowState Visible="False" X="250" Y="45" Width="230" Height="230"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4294967295</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Fixture ID="7" Head="0">
+      <Axis ID="X" LowLimit="0" HighLimit="1" Reverse="False"/>
+      <Axis ID="Y" LowLimit="0" HighLimit="1" Reverse="False"/>
+     </Fixture>
+     <Fixture ID="8" Head="0">
+      <Axis ID="X" LowLimit="0" HighLimit="1" Reverse="False"/>
+      <Axis ID="Y" LowLimit="0" HighLimit="1" Reverse="False"/>
+     </Fixture>
+     <Pan Position="0">
+      <Input Universe="3" Channel="12"/>
+     </Pan>
+     <Tilt Position="0">
+      <Input Universe="3" Channel="13"/>
+     </Tilt>
+     <Width>
+      <Input Universe="3" Channel="14"/>
+     </Width>
+     <Height>
+      <Input Universe="3" Channel="15"/>
+     </Height>
+    </XYPad>
+    <Label Caption="SL Spots | X: Knob A1 | Y: Knob A2" ID="3">
+     <WindowState Visible="False" X="10" Y="275" Width="230" Height="25"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294967295</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="SR Spots | X: Knob A3 | Y: Knob A4" ID="4">
+     <WindowState Visible="False" X="250" Y="275" Width="230" Height="25"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294967295</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Label>
+    <Label Caption="Width: Knob A5 | Height: Knob A6" ID="5">
+     <WindowState Visible="False" X="10" Y="300" Width="470" Height="25"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294967295</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Label>
+   </Frame>
   </Frame>
   <Properties>
    <Size Width="1920" Height="1080"/>
