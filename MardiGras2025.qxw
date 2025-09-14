@@ -60,47 +60,43 @@
   </Fixture>
   <Fixture>
    <Manufacturer>American DJ</Manufacturer>
-   <Model>Stealth Spot</Model>
-   <Mode>15 Channel Mode</Mode>
+   <Model>Pocket Pro</Model>
+   <Mode>13 Channel</Mode>
    <ID>4</ID>
-   <Name>StealthSpot LL</Name>
+   <Name>Pocket Pro LL</Name>
    <Universe>0</Universe>
    <Address>60</Address>
-   <Channels>15</Channels>
-   <ExcludeFade>4,5,8</ExcludeFade>
+   <Channels>13</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>American DJ</Manufacturer>
-   <Model>Stealth Spot</Model>
-   <Mode>15 Channel Mode</Mode>
+   <Model>Pocket Pro</Model>
+   <Mode>13 Channel</Mode>
    <ID>5</ID>
-   <Name>StealthSpot LR</Name>
+   <Name>Pocket Pro LR</Name>
    <Universe>0</Universe>
-   <Address>75</Address>
-   <Channels>15</Channels>
-   <ExcludeFade>4,5,8</ExcludeFade>
+   <Address>73</Address>
+   <Channels>13</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>American DJ</Manufacturer>
-   <Model>Stealth Spot</Model>
-   <Mode>15 Channel Mode</Mode>
+   <Model>Pocket Pro</Model>
+   <Mode>13 Channel</Mode>
    <ID>6</ID>
-   <Name>StealthSpot RL</Name>
+   <Name>Pocket Pro RL</Name>
    <Universe>0</Universe>
-   <Address>90</Address>
-   <Channels>15</Channels>
-   <ExcludeFade>4,5,8</ExcludeFade>
+   <Address>86</Address>
+   <Channels>13</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>American DJ</Manufacturer>
-   <Model>Stealth Spot</Model>
-   <Mode>15 Channel Mode</Mode>
+   <Model>Pocket Pro</Model>
+   <Mode>13 Channel</Mode>
    <ID>7</ID>
-   <Name>StealthSpot RR</Name>
+   <Name>Pocket Pro RR</Name>
    <Universe>0</Universe>
-   <Address>105</Address>
-   <Channels>15</Channels>
-   <ExcludeFade>4,5,8</ExcludeFade>
+   <Address>99</Address>
+   <Channels>13</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>Orion Effects Lighting</Manufacturer>
@@ -181,12 +177,12 @@
    <Head X="7" Y="0" Fixture="3">3</Head>
   </FixtureGroup>
   <FixtureGroup ID="1">
-   <Name>StealthSpots</Name>
-   <Size X="8" Y="1"/>
+   <Name>PocketPros</Name>
+   <Size X="4" Y="1"/>
    <Head X="0" Y="0" Fixture="4">0</Head>
-   <Head X="2" Y="0" Fixture="5">0</Head>
-   <Head X="5" Y="0" Fixture="6">0</Head>
-   <Head X="7" Y="0" Fixture="7">0</Head>
+   <Head X="1" Y="0" Fixture="5">0</Head>
+   <Head X="2" Y="0" Fixture="6">0</Head>
+   <Head X="3" Y="0" Fixture="7">0</Head>
   </FixtureGroup>
   <FixtureGroup ID="2">
    <Name>ORCANS</Name>
@@ -218,28 +214,27 @@
   <ChannelsGroup ID="12" Name="4X Odd Green" Value="0">2,6,2,16,3,6,3,16</ChannelsGroup>
   <ChannelsGroup ID="13" Name="4X Odd Blue" Value="0">2,7,2,17,3,7,3,17</ChannelsGroup>
   <ChannelsGroup ID="14" Name="4X Odd White" Value="0">2,8,2,19,3,8,3,19</ChannelsGroup>
-  <ChannelsGroup ID="19" Name="StealthSpot Dimmer" Value="0">4,7,5,7,6,7,7,7</ChannelsGroup>
-  <ChannelsGroup ID="20" Name="StealthSpot Shutter" Value="0">4,8,5,8,6,8,7,8</ChannelsGroup>
-  <ChannelsGroup ID="16" Name="StealthSpot Colour" Value="0">4,4,5,4,6,4,7,4</ChannelsGroup>
-  <ChannelsGroup ID="17" Name="StealthSpot Gobo" Value="0">4,5,5,5,6,5,7,5</ChannelsGroup>
-  <ChannelsGroup ID="18" Name="StealthSpot Gobo Rotation" Value="0">4,6,5,6,6,6,7,6</ChannelsGroup>
-  <ChannelsGroup ID="21" Name="StealthSpot Prism" Value="0">4,10,5,10,6,10,7,10</ChannelsGroup>
+  <ChannelsGroup ID="28" Name="PocketPro Dimmer" Value="0">4,7,5,7,6,7,7,7</ChannelsGroup>
+  <ChannelsGroup ID="25" Name="PocketPro Colour" Value="0">4,4,5,4,6,4,7,4</ChannelsGroup>
+  <ChannelsGroup ID="26" Name="PocketPro Gobo" Value="0">4,5,5,5,6,5,7,5</ChannelsGroup>
+  <ChannelsGroup ID="27" Name="PocketPro Shutter" Value="0">4,6,5,6,6,6,7,6</ChannelsGroup>
   <ChannelsGroup ID="22" Name="ORCAN Dimmer" Value="0">8,0,9,0,10,0,11,0</ChannelsGroup>
   <ChannelsGroup ID="23" Name="ORCAN UV" Value="0">8,9,9,9,10,9,11,9</ChannelsGroup>
   <ChannelsGroup ID="24" Name="Jett Fog" Value="0">12,0,13,0</ChannelsGroup>
   <Function ID="0" Type="RGBMatrix" Name="Master 4X Matrix">
-   <Speed FadeIn="0" FadeOut="0" Duration="375"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1284"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
-   <Color Index="0">4294571775</Color>
-   <Color Index="1">4294967295</Color>
+   <Color Index="0">4294967040</Color>
+   <Color Index="1">4294901760</Color>
    <Color Index="3">4279369472</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
+   <Property Name="align" Value="Left"/>
+   <Property Name="blockSize" Value="1"/>
+   <Property Name="offset" Value="0"/>
    <Property Name="orientation" Value="Horizontal"/>
-   <Property Name="presetIndex" Value="Sunset"/>
-   <Property Name="presetSize" Value="4"/>
   </Function>
   <Function ID="1" Type="Scene" Name="LasersOff" Path="Polaris/Lasers/Colours">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -280,30 +275,26 @@
    <ChannelGroupsVal>2,0,5,0,6,0,16,0,18,0,21,0,24,0</ChannelGroupsVal>
    <FixtureVal ID="0">2,0,8,0,9,0</FixtureVal>
    <FixtureVal ID="1">2,0,8,0,9,0</FixtureVal>
-   <FixtureVal ID="4">4,0,6,0,10,0</FixtureVal>
-   <FixtureVal ID="5">4,0,6,0,10,0</FixtureVal>
-   <FixtureVal ID="6">4,0,6,0,10,0</FixtureVal>
-   <FixtureVal ID="7">4,0,6,0,10,0</FixtureVal>
    <FixtureVal ID="12">0,0</FixtureVal>
    <FixtureVal ID="13">0,0</FixtureVal>
   </Function>
   <Function ID="6" Type="Scene" Name="Blackout" Path="ControlScenes">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <ChannelGroupsVal>1,0,4,0,3,0,15,0,19,0,22,0,24,0</ChannelGroupsVal>
+   <ChannelGroupsVal>1,0,4,0,3,0,15,0,19,0,22,0,24,0,28,0</ChannelGroupsVal>
    <FixtureVal ID="0">1,0,4,0,6,0</FixtureVal>
    <FixtureVal ID="1">1,0,4,0,6,0</FixtureVal>
    <FixtureVal ID="2">4,0,9,0,14,0,19,0</FixtureVal>
    <FixtureVal ID="3">4,0,9,0,14,0,19,0</FixtureVal>
-   <FixtureVal ID="4">7,0</FixtureVal>
-   <FixtureVal ID="5">7,0</FixtureVal>
-   <FixtureVal ID="6">7,0</FixtureVal>
-   <FixtureVal ID="7">7,0</FixtureVal>
    <FixtureVal ID="8">0,0</FixtureVal>
    <FixtureVal ID="9">0,0</FixtureVal>
    <FixtureVal ID="10">0,0</FixtureVal>
    <FixtureVal ID="11">0,0</FixtureVal>
    <FixtureVal ID="12">0,0</FixtureVal>
    <FixtureVal ID="13">0,0</FixtureVal>
+   <FixtureVal ID="4">7,0</FixtureVal>
+   <FixtureVal ID="5">7,0</FixtureVal>
+   <FixtureVal ID="6">7,0</FixtureVal>
+   <FixtureVal ID="7">7,0</FixtureVal>
   </Function>
   <Function ID="7" Type="Scene" Name="StrobeFull" Path="EffectScenes">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -775,61 +766,61 @@
    <FixtureVal ID="0">1,196</FixtureVal>
    <FixtureVal ID="1">1,196</FixtureVal>
   </Function>
-  <Function ID="85" Type="Scene" Name="Stealth Spot - Colour Effect - Open" Path="StealthSpot/Colours">
+  <Function ID="85" Type="Scene" Name="Pocket Pro - Colour - White" Path="PocketPros/Colours">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="5">4,0</FixtureVal>
-   <FixtureVal ID="6">4,0</FixtureVal>
-   <FixtureVal ID="7">4,0</FixtureVal>
-   <FixtureVal ID="4">4,0</FixtureVal>
+   <FixtureVal ID="7">4,3</FixtureVal>
+   <FixtureVal ID="5">4,3</FixtureVal>
+   <FixtureVal ID="6">4,3</FixtureVal>
+   <FixtureVal ID="4">4,3</FixtureVal>
   </Function>
-  <Function ID="86" Type="Scene" Name="Stealth Spot - Colour Effect - Red" Path="StealthSpot/Colours">
+  <Function ID="86" Type="Scene" Name="Pocket Pro - Colour - Red" Path="PocketPros/Colours">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="5">4,22</FixtureVal>
-   <FixtureVal ID="6">4,22</FixtureVal>
-   <FixtureVal ID="7">4,22</FixtureVal>
-   <FixtureVal ID="4">4,22</FixtureVal>
+   <FixtureVal ID="7">4,11</FixtureVal>
+   <FixtureVal ID="5">4,11</FixtureVal>
+   <FixtureVal ID="6">4,11</FixtureVal>
+   <FixtureVal ID="4">4,11</FixtureVal>
   </Function>
-  <Function ID="87" Type="Scene" Name="Stealth Spot - Colour Effect - Yellow" Path="StealthSpot/Colours">
+  <Function ID="87" Type="Scene" Name="Pocket Pro - Colour - Orange" Path="PocketPros/Colours">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="5">4,40</FixtureVal>
-   <FixtureVal ID="6">4,40</FixtureVal>
-   <FixtureVal ID="7">4,40</FixtureVal>
-   <FixtureVal ID="4">4,40</FixtureVal>
+   <FixtureVal ID="7">4,18</FixtureVal>
+   <FixtureVal ID="5">4,18</FixtureVal>
+   <FixtureVal ID="6">4,18</FixtureVal>
+   <FixtureVal ID="4">4,18</FixtureVal>
   </Function>
-  <Function ID="88" Type="Scene" Name="Stealth Spot - Colour Effect - Light Blue" Path="StealthSpot/Colours">
+  <Function ID="88" Type="Scene" Name="Pocket Pro - Colour - Yellow" Path="PocketPros/Colours">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="5">4,58</FixtureVal>
-   <FixtureVal ID="6">4,58</FixtureVal>
-   <FixtureVal ID="7">4,58</FixtureVal>
-   <FixtureVal ID="4">4,58</FixtureVal>
+   <FixtureVal ID="7">4,25</FixtureVal>
+   <FixtureVal ID="5">4,25</FixtureVal>
+   <FixtureVal ID="6">4,25</FixtureVal>
+   <FixtureVal ID="4">4,25</FixtureVal>
   </Function>
-  <Function ID="89" Type="Scene" Name="Stealth Spot - Colour Effect - Green" Path="StealthSpot/Colours">
+  <Function ID="89" Type="Scene" Name="Pocket Pro - Colour - Green" Path="PocketPros/Colours">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="5">4,76</FixtureVal>
-   <FixtureVal ID="6">4,76</FixtureVal>
-   <FixtureVal ID="7">4,76</FixtureVal>
-   <FixtureVal ID="4">4,76</FixtureVal>
+   <FixtureVal ID="7">4,32</FixtureVal>
+   <FixtureVal ID="5">4,32</FixtureVal>
+   <FixtureVal ID="6">4,32</FixtureVal>
+   <FixtureVal ID="4">4,32</FixtureVal>
   </Function>
-  <Function ID="90" Type="Scene" Name="Stealth Spot - Colour Effect - Orange" Path="StealthSpot/Colours">
+  <Function ID="90" Type="Scene" Name="Pocket Pro - Colour - UV" Path="PocketPros/Colours">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="5">4,94</FixtureVal>
-   <FixtureVal ID="6">4,94</FixtureVal>
-   <FixtureVal ID="7">4,94</FixtureVal>
-   <FixtureVal ID="4">4,94</FixtureVal>
+   <FixtureVal ID="7">4,39</FixtureVal>
+   <FixtureVal ID="5">4,39</FixtureVal>
+   <FixtureVal ID="6">4,39</FixtureVal>
+   <FixtureVal ID="4">4,39</FixtureVal>
   </Function>
-  <Function ID="91" Type="Scene" Name="Stealth Spot - Colour Effect - Pink" Path="StealthSpot/Colours">
+  <Function ID="91" Type="Scene" Name="Pocket Pro - Colour - Blue" Path="PocketPros/Colours">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="5">4,112</FixtureVal>
-   <FixtureVal ID="6">4,112</FixtureVal>
-   <FixtureVal ID="7">4,112</FixtureVal>
-   <FixtureVal ID="4">4,112</FixtureVal>
+   <FixtureVal ID="7">4,46</FixtureVal>
+   <FixtureVal ID="5">4,46</FixtureVal>
+   <FixtureVal ID="6">4,46</FixtureVal>
+   <FixtureVal ID="4">4,46</FixtureVal>
   </Function>
-  <Function ID="92" Type="Scene" Name="Stealth Spot - Colour Effect - Blue" Path="StealthSpot/Colours">
+  <Function ID="92" Type="Scene" Name="Pocket Pro - Colour - Pink" Path="PocketPros/Colours">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="5">4,126</FixtureVal>
-   <FixtureVal ID="6">4,126</FixtureVal>
-   <FixtureVal ID="7">4,126</FixtureVal>
-   <FixtureVal ID="4">4,126</FixtureVal>
+   <FixtureVal ID="7">4,53</FixtureVal>
+   <FixtureVal ID="5">4,53</FixtureVal>
+   <FixtureVal ID="6">4,53</FixtureVal>
+   <FixtureVal ID="4">4,53</FixtureVal>
   </Function>
   <Function ID="93" Type="Scene" Name="OperationMode" Path="ControlScenes">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -844,10 +835,6 @@
    <ChannelGroupsVal>0,220</ChannelGroupsVal>
    <FixtureVal ID="0"/>
    <FixtureVal ID="1"/>
-   <FixtureVal ID="4">11,250,12,244,13,42,14,77</FixtureVal>
-   <FixtureVal ID="5">11,250,12,244,13,42,14,77</FixtureVal>
-   <FixtureVal ID="6">11,250,12,244,13,42,14,77</FixtureVal>
-   <FixtureVal ID="7">11,250,12,244,13,42,14,77</FixtureVal>
   </Function>
   <Function ID="95" Type="Scene" Name="Twinkle1" Path="EffectScenes/Twinkle">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -898,7 +885,7 @@
    <FixtureVal ID="1">4,46</FixtureVal>
   </Function>
   <Function ID="103" Type="Chaser" Name="StrobeTwinkle">
-   <Speed FadeIn="0" FadeOut="0" Duration="93"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="321"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -918,44 +905,12 @@
    <FixtureVal ID="10">4,255</FixtureVal>
    <FixtureVal ID="11">4,255</FixtureVal>
   </Function>
-  <Function ID="105" Type="Scene" Name="Open" Path="StealthSpot/GOBOs">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <ChannelGroupsVal>17,0</ChannelGroupsVal>
-   <FixtureVal ID="4">5,0</FixtureVal>
-   <FixtureVal ID="5">5,0</FixtureVal>
-   <FixtureVal ID="6">5,0</FixtureVal>
-   <FixtureVal ID="7">5,0</FixtureVal>
-  </Function>
-  <Function ID="106" Type="Scene" Name="Triangle" Path="StealthSpot/GOBOs">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <ChannelGroupsVal>17,60</ChannelGroupsVal>
-   <FixtureVal ID="4">5,60</FixtureVal>
-   <FixtureVal ID="5">5,60</FixtureVal>
-   <FixtureVal ID="6">5,60</FixtureVal>
-   <FixtureVal ID="7">5,60</FixtureVal>
-  </Function>
-  <Function ID="107" Type="Scene" Name="Dots" Path="StealthSpot/GOBOs">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <ChannelGroupsVal>17,36</ChannelGroupsVal>
-   <FixtureVal ID="4">5,36</FixtureVal>
-   <FixtureVal ID="5">5,36</FixtureVal>
-   <FixtureVal ID="6">5,36</FixtureVal>
-   <FixtureVal ID="7">5,36</FixtureVal>
-  </Function>
   <Function ID="108" Type="Scene" Name="SoftStrobeGreen" Path="EffectScenes/SoftStrobe">
    <Speed FadeIn="100" FadeOut="500" Duration="0"/>
    <FixtureVal ID="8">5,255</FixtureVal>
    <FixtureVal ID="9">5,255</FixtureVal>
    <FixtureVal ID="10">5,255</FixtureVal>
    <FixtureVal ID="11">5,255</FixtureVal>
-  </Function>
-  <Function ID="109" Type="Scene" Name="Sun" Path="StealthSpot/GOBOs">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <ChannelGroupsVal>17,9</ChannelGroupsVal>
-   <FixtureVal ID="4">5,9</FixtureVal>
-   <FixtureVal ID="5">5,9</FixtureVal>
-   <FixtureVal ID="6">5,9</FixtureVal>
-   <FixtureVal ID="7">5,9</FixtureVal>
   </Function>
   <Function ID="110" Type="Scene" Name="SoftStrobeBlue" Path="EffectScenes/SoftStrobe">
    <Speed FadeIn="100" FadeOut="500" Duration="0"/>
@@ -964,37 +919,13 @@
    <FixtureVal ID="10">6,255</FixtureVal>
    <FixtureVal ID="11">6,255</FixtureVal>
   </Function>
-  <Function ID="111" Type="Scene" Name="Spiral" Path="StealthSpot/GOBOs">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <ChannelGroupsVal>17,85</ChannelGroupsVal>
-   <FixtureVal ID="4">5,85</FixtureVal>
-   <FixtureVal ID="5">5,85</FixtureVal>
-   <FixtureVal ID="6">5,85</FixtureVal>
-   <FixtureVal ID="7">5,85</FixtureVal>
-  </Function>
-  <Function ID="112" Type="Scene" Name="Star" Path="StealthSpot/GOBOs">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <ChannelGroupsVal>17,112</ChannelGroupsVal>
-   <FixtureVal ID="4">5,112</FixtureVal>
-   <FixtureVal ID="5">5,112</FixtureVal>
-   <FixtureVal ID="6">5,112</FixtureVal>
-   <FixtureVal ID="7">5,112</FixtureVal>
-  </Function>
-  <Function ID="113" Type="Scene" Name="PrismOff" Path="StealthSpot/Prism">
+  <Function ID="113" Type="Scene" Name="PrismOff" Path="PocketPros/Prism">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>21,0</ChannelGroupsVal>
-   <FixtureVal ID="4">10,0</FixtureVal>
-   <FixtureVal ID="5">10,0</FixtureVal>
-   <FixtureVal ID="6">10,0</FixtureVal>
-   <FixtureVal ID="7">10,0</FixtureVal>
   </Function>
-  <Function ID="114" Type="Scene" Name="PrismOn" Path="StealthSpot/Prism">
+  <Function ID="114" Type="Scene" Name="PrismOn" Path="PocketPros/Prism">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>21,34</ChannelGroupsVal>
-   <FixtureVal ID="4">10,34</FixtureVal>
-   <FixtureVal ID="5">10,34</FixtureVal>
-   <FixtureVal ID="6">10,34</FixtureVal>
-   <FixtureVal ID="7">10,34</FixtureVal>
   </Function>
   <Function ID="115" Type="Scene" Name="SoftStrobeWhite" Path="EffectScenes/SoftStrobe">
    <Speed FadeIn="100" FadeOut="500" Duration="0"/>
@@ -1010,43 +941,22 @@
    <FixtureVal ID="10">8,255</FixtureVal>
    <FixtureVal ID="11">8,255</FixtureVal>
   </Function>
-  <Function ID="117" Type="Scene" Name="SSLL" Path="StealthSpot/IntensitySparkle">
+  <Function ID="117" Type="Scene" Name="SSLL" Path="PocketPros/IntensitySparkle">
    <Speed FadeIn="100" FadeOut="500" Duration="0"/>
    <FixtureVal ID="4">7,255</FixtureVal>
    <FixtureVal ID="5">7,128</FixtureVal>
    <FixtureVal ID="6">7,128</FixtureVal>
    <FixtureVal ID="7">7,128</FixtureVal>
   </Function>
-  <Function ID="118" Type="Scene" Name="SSRR" Path="StealthSpot/IntensitySparkle">
-   <Speed FadeIn="100" FadeOut="500" Duration="0"/>
-   <FixtureVal ID="7">7,255</FixtureVal>
-   <FixtureVal ID="4">7,128</FixtureVal>
-   <FixtureVal ID="5">7,128</FixtureVal>
-   <FixtureVal ID="6">7,128</FixtureVal>
-  </Function>
-  <Function ID="119" Type="Scene" Name="SSRL" Path="StealthSpot/IntensitySparkle">
-   <Speed FadeIn="100" FadeOut="500" Duration="0"/>
-   <FixtureVal ID="6">7,255</FixtureVal>
-   <FixtureVal ID="4">7,128</FixtureVal>
-   <FixtureVal ID="5">7,128</FixtureVal>
-   <FixtureVal ID="7">7,128</FixtureVal>
-  </Function>
-  <Function ID="120" Type="Scene" Name="SSLR" Path="StealthSpot/IntensitySparkle">
-   <Speed FadeIn="100" FadeOut="500" Duration="0"/>
-   <FixtureVal ID="5">7,255</FixtureVal>
-   <FixtureVal ID="4">7,128</FixtureVal>
-   <FixtureVal ID="6">7,128</FixtureVal>
-   <FixtureVal ID="7">7,128</FixtureVal>
-  </Function>
   <Function ID="121" Type="Chaser" Name="StealthSpotTwinkle">
-   <Speed FadeIn="0" FadeOut="0" Duration="375"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1284"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="0" FadeOut="500">117</Step>
-   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">120</Step>
-   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">119</Step>
-   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">118</Step>
+   <Step Number="0" FadeIn="0" Hold="375" FadeOut="0">117</Step>
+   <Step Number="1" FadeIn="0" Hold="375" FadeOut="0">164</Step>
+   <Step Number="2" FadeIn="0" Hold="375" FadeOut="0">166</Step>
+   <Step Number="3" FadeIn="0" Hold="375" FadeOut="0">165</Step>
   </Function>
   <Function ID="122" Type="Scene" Name="4X Pulse On" Path="RGB Intensities">
    <Speed FadeIn="500" FadeOut="500" Duration="0"/>
@@ -1056,36 +966,36 @@
   </Function>
   <Function ID="123" Type="Scene" Name="4X Pulse Low" Path="RGB Intensities">
    <Speed FadeIn="500" FadeOut="500" Duration="0"/>
-   <ChannelGroupsVal>15,64</ChannelGroupsVal>
-   <FixtureVal ID="2">4,64,9,64,14,64,19,64</FixtureVal>
-   <FixtureVal ID="3">4,64,9,64,14,64,19,64</FixtureVal>
+   <ChannelGroupsVal>15,128</ChannelGroupsVal>
+   <FixtureVal ID="2">4,128,9,128,14,128,19,128</FixtureVal>
+   <FixtureVal ID="3">4,128,9,128,14,128,19,128</FixtureVal>
   </Function>
   <Function ID="124" Type="Chaser" Name="4X Pulse">
-   <Speed FadeIn="0" FadeOut="0" Duration="375"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="642"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
    <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">123</Step>
    <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">122</Step>
   </Function>
-  <Function ID="125" Type="Scene" Name="StealthSpotOn" Path="StealthSpot/IntensityPulse">
+  <Function ID="125" Type="Scene" Name="StealthSpotOn" Path="PocketPros/IntensityPulse">
    <Speed FadeIn="500" FadeOut="500" Duration="0"/>
-   <ChannelGroupsVal>19,255</ChannelGroupsVal>
+   <ChannelGroupsVal>19,255,28,255</ChannelGroupsVal>
    <FixtureVal ID="4">7,255</FixtureVal>
    <FixtureVal ID="5">7,255</FixtureVal>
    <FixtureVal ID="6">7,255</FixtureVal>
    <FixtureVal ID="7">7,255</FixtureVal>
   </Function>
-  <Function ID="126" Type="Scene" Name="StealthSpotLow" Path="StealthSpot/IntensityPulse">
+  <Function ID="126" Type="Scene" Name="StealthSpotLow" Path="PocketPros/IntensityPulse">
    <Speed FadeIn="500" FadeOut="500" Duration="0"/>
-   <ChannelGroupsVal>19,128</ChannelGroupsVal>
+   <ChannelGroupsVal>19,128,28,128</ChannelGroupsVal>
    <FixtureVal ID="4">7,128</FixtureVal>
    <FixtureVal ID="5">7,128</FixtureVal>
    <FixtureVal ID="6">7,128</FixtureVal>
    <FixtureVal ID="7">7,128</FixtureVal>
   </Function>
   <Function ID="127" Type="Chaser" Name="StealthSpotPulse">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1284"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -1093,7 +1003,7 @@
    <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">125</Step>
   </Function>
   <Function ID="128" Type="Chaser" Name="Polaris Chase 1 Colour">
-   <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1284"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -1105,7 +1015,7 @@
    <Step Number="5" FadeIn="0" Hold="0" FadeOut="0">29</Step>
   </Function>
   <Function ID="129" Type="Chaser" Name="Polaris Chase 2 Colour">
-   <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1284"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -1126,34 +1036,6 @@
    <Step Number="14" FadeIn="0" Hold="0" FadeOut="0">27</Step>
   </Function>
   <Function ID="130" Type="EFX" Name="StealthSpots Move 1">
-   <Fixture>
-    <ID>4</ID>
-    <Head>0</Head>
-    <Mode>0</Mode>
-    <Direction>Forward</Direction>
-    <StartOffset>0</StartOffset>
-   </Fixture>
-   <Fixture>
-    <ID>5</ID>
-    <Head>0</Head>
-    <Mode>0</Mode>
-    <Direction>Forward</Direction>
-    <StartOffset>90</StartOffset>
-   </Fixture>
-   <Fixture>
-    <ID>6</ID>
-    <Head>0</Head>
-    <Mode>0</Mode>
-    <Direction>Forward</Direction>
-    <StartOffset>180</StartOffset>
-   </Fixture>
-   <Fixture>
-    <ID>7</ID>
-    <Head>0</Head>
-    <Mode>0</Mode>
-    <Direction>Forward</Direction>
-    <StartOffset>270</StartOffset>
-   </Fixture>
    <PropagationMode>Parallel</PropagationMode>
    <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
    <Direction>Forward</Direction>
@@ -1179,12 +1061,281 @@
    <Step Number="0">132</Step>
    <Step Number="1">130</Step>
   </Function>
-  <Function ID="132" Type="Scene" Name="CenterDanceFloor" Path="StealthSpot/Positions">
+  <Function ID="132" Type="Scene" Name="CenterDanceFloor" Path="PocketPros/Positions">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4"/>
-   <FixtureVal ID="5"/>
-   <FixtureVal ID="6"/>
-   <FixtureVal ID="7"/>
+  </Function>
+  <Function ID="133" Type="Scene" Name="Pocket Pro - Colour - White &amp; Red" Path="PocketPros/Colours">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">4,61</FixtureVal>
+   <FixtureVal ID="5">4,61</FixtureVal>
+   <FixtureVal ID="6">4,61</FixtureVal>
+   <FixtureVal ID="4">4,61</FixtureVal>
+  </Function>
+  <Function ID="134" Type="Scene" Name="Pocket Pro - Colour - Red &amp; Orange" Path="PocketPros/Colours">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">4,71</FixtureVal>
+   <FixtureVal ID="5">4,71</FixtureVal>
+   <FixtureVal ID="6">4,71</FixtureVal>
+   <FixtureVal ID="4">4,71</FixtureVal>
+  </Function>
+  <Function ID="135" Type="Scene" Name="Pocket Pro - Colour - Orange &amp; Yellow" Path="PocketPros/Colours">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">4,81</FixtureVal>
+   <FixtureVal ID="5">4,81</FixtureVal>
+   <FixtureVal ID="6">4,81</FixtureVal>
+   <FixtureVal ID="4">4,81</FixtureVal>
+  </Function>
+  <Function ID="136" Type="Scene" Name="Pocket Pro - Colour - Yellow &amp; Green" Path="PocketPros/Colours">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">4,91</FixtureVal>
+   <FixtureVal ID="5">4,91</FixtureVal>
+   <FixtureVal ID="6">4,91</FixtureVal>
+   <FixtureVal ID="4">4,91</FixtureVal>
+  </Function>
+  <Function ID="137" Type="Scene" Name="Pocket Pro - Colour - Green &amp; UV" Path="PocketPros/Colours">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">4,101</FixtureVal>
+   <FixtureVal ID="5">4,101</FixtureVal>
+   <FixtureVal ID="6">4,101</FixtureVal>
+   <FixtureVal ID="4">4,101</FixtureVal>
+  </Function>
+  <Function ID="138" Type="Scene" Name="Pocket Pro - Colour - UV &amp; Light Blue" Path="PocketPros/Colours">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">4,111</FixtureVal>
+   <FixtureVal ID="5">4,111</FixtureVal>
+   <FixtureVal ID="6">4,111</FixtureVal>
+   <FixtureVal ID="4">4,111</FixtureVal>
+  </Function>
+  <Function ID="139" Type="Scene" Name="Pocket Pro - Colour - Light Blue &amp; Pink" Path="PocketPros/Colours">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">4,122</FixtureVal>
+   <FixtureVal ID="5">4,122</FixtureVal>
+   <FixtureVal ID="6">4,122</FixtureVal>
+   <FixtureVal ID="4">4,122</FixtureVal>
+  </Function>
+  <Function ID="140" Type="Scene" Name="Pocket Pro - Colour - Colour Scroll Slow To Fast" Path="PocketPros/Colours">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">4,158</FixtureVal>
+   <FixtureVal ID="5">4,158</FixtureVal>
+   <FixtureVal ID="6">4,158</FixtureVal>
+   <FixtureVal ID="4">4,158</FixtureVal>
+  </Function>
+  <Function ID="141" Type="Scene" Name="Pocket Pro - Colour - Stop" Path="PocketPros/Colours">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">4,191</FixtureVal>
+   <FixtureVal ID="5">4,191</FixtureVal>
+   <FixtureVal ID="6">4,191</FixtureVal>
+   <FixtureVal ID="4">4,191</FixtureVal>
+  </Function>
+  <Function ID="142" Type="Scene" Name="Pocket Pro - Colour - Colour Scroll Fast To Slow" Path="PocketPros/Colours">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">4,224</FixtureVal>
+   <FixtureVal ID="5">4,224</FixtureVal>
+   <FixtureVal ID="6">4,224</FixtureVal>
+   <FixtureVal ID="4">4,224</FixtureVal>
+  </Function>
+  <Function ID="143" Type="Chaser" Name="Colour macros chaser - Pocket Pro">
+   <Speed FadeIn="3000" FadeOut="0" Duration="10000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">85</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">86</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">87</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">88</Step>
+   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">89</Step>
+   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0">90</Step>
+   <Step Number="6" FadeIn="0" Hold="0" FadeOut="0">91</Step>
+   <Step Number="7" FadeIn="0" Hold="0" FadeOut="0">92</Step>
+   <Step Number="8" FadeIn="0" Hold="0" FadeOut="0">133</Step>
+   <Step Number="9" FadeIn="0" Hold="0" FadeOut="0">134</Step>
+   <Step Number="10" FadeIn="0" Hold="0" FadeOut="0">135</Step>
+   <Step Number="11" FadeIn="0" Hold="0" FadeOut="0">136</Step>
+   <Step Number="12" FadeIn="0" Hold="0" FadeOut="0">137</Step>
+   <Step Number="13" FadeIn="0" Hold="0" FadeOut="0">138</Step>
+   <Step Number="14" FadeIn="0" Hold="0" FadeOut="0">139</Step>
+   <Step Number="15" FadeIn="0" Hold="0" FadeOut="0">140</Step>
+   <Step Number="16" FadeIn="0" Hold="0" FadeOut="0">141</Step>
+   <Step Number="17" FadeIn="0" Hold="0" FadeOut="0">142</Step>
+  </Function>
+  <Function ID="144" Type="Scene" Name="Pocket Pro - Gobo - Open" Path="PocketPros/GOBOs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">5,3</FixtureVal>
+   <FixtureVal ID="5">5,3</FixtureVal>
+   <FixtureVal ID="6">5,3</FixtureVal>
+   <FixtureVal ID="4">5,3</FixtureVal>
+  </Function>
+  <Function ID="145" Type="Scene" Name="Pocket Pro - Gobo - Gobo 1" Path="PocketPros/GOBOs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">5,11</FixtureVal>
+   <FixtureVal ID="5">5,11</FixtureVal>
+   <FixtureVal ID="6">5,11</FixtureVal>
+   <FixtureVal ID="4">5,11</FixtureVal>
+  </Function>
+  <Function ID="146" Type="Scene" Name="Pocket Pro - Gobo - Gobo 2" Path="PocketPros/GOBOs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">5,19</FixtureVal>
+   <FixtureVal ID="5">5,19</FixtureVal>
+   <FixtureVal ID="6">5,19</FixtureVal>
+   <FixtureVal ID="4">5,19</FixtureVal>
+  </Function>
+  <Function ID="147" Type="Scene" Name="Pocket Pro - Gobo - Gobo 3" Path="PocketPros/GOBOs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">5,27</FixtureVal>
+   <FixtureVal ID="5">5,27</FixtureVal>
+   <FixtureVal ID="6">5,27</FixtureVal>
+   <FixtureVal ID="4">5,27</FixtureVal>
+  </Function>
+  <Function ID="148" Type="Scene" Name="Pocket Pro - Gobo - Gobo 4" Path="PocketPros/GOBOs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">5,35</FixtureVal>
+   <FixtureVal ID="5">5,35</FixtureVal>
+   <FixtureVal ID="6">5,35</FixtureVal>
+   <FixtureVal ID="4">5,35</FixtureVal>
+  </Function>
+  <Function ID="149" Type="Scene" Name="Pocket Pro - Gobo - Gobo 5" Path="PocketPros/GOBOs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">5,43</FixtureVal>
+   <FixtureVal ID="5">5,43</FixtureVal>
+   <FixtureVal ID="6">5,43</FixtureVal>
+   <FixtureVal ID="4">5,43</FixtureVal>
+  </Function>
+  <Function ID="150" Type="Scene" Name="Pocket Pro - Gobo - Gobo 6" Path="PocketPros/GOBOs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">5,51</FixtureVal>
+   <FixtureVal ID="5">5,51</FixtureVal>
+   <FixtureVal ID="6">5,51</FixtureVal>
+   <FixtureVal ID="4">5,51</FixtureVal>
+  </Function>
+  <Function ID="151" Type="Scene" Name="Pocket Pro - Gobo - Gobo 7" Path="PocketPros/GOBOs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">5,59</FixtureVal>
+   <FixtureVal ID="5">5,59</FixtureVal>
+   <FixtureVal ID="6">5,59</FixtureVal>
+   <FixtureVal ID="4">5,59</FixtureVal>
+  </Function>
+  <Function ID="152" Type="Scene" Name="Pocket Pro - Gobo - Open Shake" Path="PocketPros/GOBOs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">5,67</FixtureVal>
+   <FixtureVal ID="5">5,67</FixtureVal>
+   <FixtureVal ID="6">5,67</FixtureVal>
+   <FixtureVal ID="4">5,67</FixtureVal>
+  </Function>
+  <Function ID="153" Type="Scene" Name="Pocket Pro - Gobo - Gobo 1 Shake" Path="PocketPros/GOBOs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">5,75</FixtureVal>
+   <FixtureVal ID="5">5,75</FixtureVal>
+   <FixtureVal ID="6">5,75</FixtureVal>
+   <FixtureVal ID="4">5,75</FixtureVal>
+  </Function>
+  <Function ID="154" Type="Scene" Name="Pocket Pro - Gobo - Gobo 2 Shake" Path="PocketPros/GOBOs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">5,83</FixtureVal>
+   <FixtureVal ID="5">5,83</FixtureVal>
+   <FixtureVal ID="6">5,83</FixtureVal>
+   <FixtureVal ID="4">5,83</FixtureVal>
+  </Function>
+  <Function ID="155" Type="Scene" Name="Pocket Pro - Gobo - Gobo 3 Shake" Path="PocketPros/GOBOs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">5,91</FixtureVal>
+   <FixtureVal ID="5">5,91</FixtureVal>
+   <FixtureVal ID="6">5,91</FixtureVal>
+   <FixtureVal ID="4">5,91</FixtureVal>
+  </Function>
+  <Function ID="156" Type="Scene" Name="Pocket Pro - Gobo - Gobo 4 Shake" Path="PocketPros/GOBOs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">5,99</FixtureVal>
+   <FixtureVal ID="5">5,99</FixtureVal>
+   <FixtureVal ID="6">5,99</FixtureVal>
+   <FixtureVal ID="4">5,99</FixtureVal>
+  </Function>
+  <Function ID="157" Type="Scene" Name="Pocket Pro - Gobo - Gobo 5 Shake" Path="PocketPros/GOBOs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">5,107</FixtureVal>
+   <FixtureVal ID="5">5,107</FixtureVal>
+   <FixtureVal ID="6">5,107</FixtureVal>
+   <FixtureVal ID="4">5,107</FixtureVal>
+  </Function>
+  <Function ID="158" Type="Scene" Name="Pocket Pro - Gobo - Gobo 6 Shake" Path="PocketPros/GOBOs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">5,115</FixtureVal>
+   <FixtureVal ID="5">5,115</FixtureVal>
+   <FixtureVal ID="6">5,115</FixtureVal>
+   <FixtureVal ID="4">5,115</FixtureVal>
+  </Function>
+  <Function ID="159" Type="Scene" Name="Pocket Pro - Gobo - Gobo 7 Shake" Path="PocketPros/GOBOs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">5,123</FixtureVal>
+   <FixtureVal ID="5">5,123</FixtureVal>
+   <FixtureVal ID="6">5,123</FixtureVal>
+   <FixtureVal ID="4">5,123</FixtureVal>
+  </Function>
+  <Function ID="160" Type="Scene" Name="Pocket Pro - Gobo - Gobo Scroll Fast to Slow" Path="PocketPros/GOBOs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">5,158</FixtureVal>
+   <FixtureVal ID="5">5,158</FixtureVal>
+   <FixtureVal ID="6">5,158</FixtureVal>
+   <FixtureVal ID="4">5,158</FixtureVal>
+  </Function>
+  <Function ID="161" Type="Scene" Name="Pocket Pro - Gobo - Gobo Stop" Path="PocketPros/GOBOs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">5,191</FixtureVal>
+   <FixtureVal ID="5">5,191</FixtureVal>
+   <FixtureVal ID="6">5,191</FixtureVal>
+   <FixtureVal ID="4">5,191</FixtureVal>
+  </Function>
+  <Function ID="162" Type="Scene" Name="Pocket Pro - Gobo - Gobo Scroll Slow to Fast" Path="PocketPros/GOBOs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">5,224</FixtureVal>
+   <FixtureVal ID="5">5,224</FixtureVal>
+   <FixtureVal ID="6">5,224</FixtureVal>
+   <FixtureVal ID="4">5,224</FixtureVal>
+  </Function>
+  <Function ID="163" Type="Chaser" Name="Gobo macros chaser - Pocket Pro">
+   <Speed FadeIn="3000" FadeOut="0" Duration="10000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">144</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">145</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">146</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">147</Step>
+   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">148</Step>
+   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0">149</Step>
+   <Step Number="6" FadeIn="0" Hold="0" FadeOut="0">150</Step>
+   <Step Number="7" FadeIn="0" Hold="0" FadeOut="0">151</Step>
+   <Step Number="8" FadeIn="0" Hold="0" FadeOut="0">152</Step>
+   <Step Number="9" FadeIn="0" Hold="0" FadeOut="0">153</Step>
+   <Step Number="10" FadeIn="0" Hold="0" FadeOut="0">154</Step>
+   <Step Number="11" FadeIn="0" Hold="0" FadeOut="0">155</Step>
+   <Step Number="12" FadeIn="0" Hold="0" FadeOut="0">156</Step>
+   <Step Number="13" FadeIn="0" Hold="0" FadeOut="0">157</Step>
+   <Step Number="14" FadeIn="0" Hold="0" FadeOut="0">158</Step>
+   <Step Number="15" FadeIn="0" Hold="0" FadeOut="0">159</Step>
+   <Step Number="16" FadeIn="0" Hold="0" FadeOut="0">160</Step>
+   <Step Number="17" FadeIn="0" Hold="0" FadeOut="0">161</Step>
+   <Step Number="18" FadeIn="0" Hold="0" FadeOut="0">162</Step>
+  </Function>
+  <Function ID="164" Type="Scene" Name="SSLR" Path="PocketPros/IntensitySparkle">
+   <Speed FadeIn="100" FadeOut="500" Duration="0"/>
+   <FixtureVal ID="4">7,128</FixtureVal>
+   <FixtureVal ID="5">7,255</FixtureVal>
+   <FixtureVal ID="6">7,128</FixtureVal>
+   <FixtureVal ID="7">7,128</FixtureVal>
+  </Function>
+  <Function ID="165" Type="Scene" Name="SSRR" Path="PocketPros/IntensitySparkle">
+   <Speed FadeIn="100" FadeOut="500" Duration="0"/>
+   <FixtureVal ID="4">7,128</FixtureVal>
+   <FixtureVal ID="5">7,128</FixtureVal>
+   <FixtureVal ID="6">7,128</FixtureVal>
+   <FixtureVal ID="7">7,255</FixtureVal>
+  </Function>
+  <Function ID="166" Type="Scene" Name="SSRL" Path="PocketPros/IntensitySparkle">
+   <Speed FadeIn="100" FadeOut="500" Duration="0"/>
+   <FixtureVal ID="4">7,128</FixtureVal>
+   <FixtureVal ID="5">7,128</FixtureVal>
+   <FixtureVal ID="6">7,255</FixtureVal>
+   <FixtureVal ID="7">7,128</FixtureVal>
   </Function>
   <Monitor DisplayMode="1" ShowLabels="0">
    <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
@@ -1195,10 +1346,10 @@
    <FxItem ID="1" XPos="3986.01" YPos="3937.06"/>
    <FxItem ID="2" XPos="503.496" YPos="4314.69"/>
    <FxItem ID="3" XPos="4307.69" YPos="4300.7"/>
-   <FxItem ID="4" XPos="-475.524" YPos="4118.88"/>
-   <FxItem ID="5" XPos="1370.63" YPos="4132.87"/>
-   <FxItem ID="6" XPos="3552.45" YPos="4265.73"/>
-   <FxItem ID="7" XPos="5076.92" YPos="4188.81"/>
+   <FxItem ID="4" XPos="-27.972" YPos="4230.77"/>
+   <FxItem ID="5" XPos="944.056" YPos="4202.8"/>
+   <FxItem ID="6" XPos="3755.24" YPos="4300.7"/>
+   <FxItem ID="7" XPos="4804.2" YPos="4300.7"/>
    <FxItem ID="8" XPos="685.315" YPos="4657.34"/>
    <FxItem ID="9" XPos="0" YPos="4657.34"/>
    <FxItem ID="10" XPos="4048.95" YPos="4657.34"/>
@@ -1237,7 +1388,7 @@
     </Appearance>
     <Visibility>65639</Visibility>
     <AbsoluteValue Minimum="0" Maximum="1000"/>
-    <Time>375</Time>
+    <Time>642</Time>
     <Function FadeIn="0" FadeOut="0" Duration="4">103</Function>
     <Function FadeIn="0" FadeOut="0" Duration="6">121</Function>
     <Function FadeIn="0" FadeOut="0" Duration="6">127</Function>
@@ -2311,222 +2462,6 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
    </SoloFrame>
-   <SoloFrame Caption="Stealth Spot Colours" ID="25">
-    <Appearance>
-     <FrameStyle>Sunken</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>4283760640</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-    <WindowState Visible="True" X="1000" Y="0" Width="220" Height="160"/>
-    <AllowChildren>False</AllowChildren>
-    <AllowResize>False</AllowResize>
-    <ShowHeader>True</ShowHeader>
-    <ShowEnableButton>True</ShowEnableButton>
-    <Mixing>False</Mixing>
-    <Collapsed>False</Collapsed>
-    <Disabled>False</Disabled>
-    <Button Caption="Stealth Spot - Colour Effect - Blue" ID="26" Icon="">
-     <WindowState Visible="True" X="160" Y="50" Width="50" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4278190207</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="92"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-    <Button Caption="Stealth Spot - Colour Effect - Green" ID="27" Icon="">
-     <WindowState Visible="True" X="110" Y="50" Width="50" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4278211840</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="89"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-    <Button Caption="Stealth Spot - Colour Effect - Light Blue" ID="28" Icon="">
-     <WindowState Visible="True" X="10" Y="100" Width="50" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4278212095</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="88"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-    <Button Caption="Stealth Spot - Colour Effect - Open" ID="29" Icon="">
-     <WindowState Visible="True" X="10" Y="50" Width="50" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4291608632</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="85"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-    <Button Caption="Stealth Spot - Colour Effect - Orange" ID="30" Icon="">
-     <WindowState Visible="True" X="60" Y="100" Width="50" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4289805056</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="90"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-    <Button Caption="Stealth Spot - Colour Effect - Pink" ID="31" Icon="">
-     <WindowState Visible="True" X="110" Y="100" Width="50" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4290330205</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="91"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-    <Button Caption="Stealth Spot - Colour Effect - Red" ID="32" Icon="">
-     <WindowState Visible="True" X="60" Y="50" Width="50" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4289331200</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="86"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-    <Button Caption="Stealth Spot - Colour Effect - Yellow" ID="33" Icon="">
-     <WindowState Visible="True" X="160" Y="100" Width="50" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4289966848</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="87"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-   </SoloFrame>
-   <SoloFrame Caption="Stealth Spot GOBOs" ID="34">
-    <Appearance>
-     <FrameStyle>Sunken</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>4283760640</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-    <WindowState Visible="True" X="995" Y="160" Width="170" Height="160"/>
-    <AllowChildren>False</AllowChildren>
-    <AllowResize>False</AllowResize>
-    <ShowHeader>True</ShowHeader>
-    <ShowEnableButton>True</ShowEnableButton>
-    <Mixing>False</Mixing>
-    <Collapsed>False</Collapsed>
-    <Disabled>False</Disabled>
-    <Button Caption="Dots" ID="35" Icon="">
-     <WindowState Visible="True" X="60" Y="50" Width="50" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/stealthspot/3spots.png</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="107"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-    <Button Caption="Open" ID="36" Icon="">
-     <WindowState Visible="True" X="10" Y="50" Width="50" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4289374890</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="105"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-    <Button Caption="Spiral" ID="37" Icon="">
-     <WindowState Visible="True" X="110" Y="50" Width="50" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/stealthspot/spiral.png</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="111"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-    <Button Caption="Star" ID="38" Icon="">
-     <WindowState Visible="True" X="10" Y="100" Width="50" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/stealthspot/star.png</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="112"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-    <Button Caption="Sun" ID="39" Icon="">
-     <WindowState Visible="True" X="60" Y="100" Width="50" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/stealthspot/flower.png</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="109"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-    <Button Caption="Triangle" ID="40" Icon="">
-     <WindowState Visible="True" X="110" Y="100" Width="50" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/stealthspot/triangle.png</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="106"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-   </SoloFrame>
    <Frame Caption="Control Sequences" ID="41">
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
@@ -3016,7 +2951,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="1340" Y="0" Width="345" Height="230"/>
+    <WindowState Visible="True" X="1340" Y="0" Width="220" Height="230"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -3034,7 +2969,7 @@
      </Appearance>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
      <Reset/>
-     <Level LowLimit="0" HighLimit="255" Value="0">
+     <Level LowLimit="128" HighLimit="255" Value="128">
       <Channel Fixture="4">4</Channel>
       <Channel Fixture="5">4</Channel>
       <Channel Fixture="6">4</Channel>
@@ -3055,81 +2990,17 @@
      </Appearance>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
      <Reset/>
-     <Level LowLimit="0" HighLimit="255" Value="0">
-      <Channel Fixture="4">6</Channel>
-      <Channel Fixture="5">6</Channel>
-      <Channel Fixture="6">6</Channel>
-      <Channel Fixture="7">6</Channel>
-     </Level>
-     <Playback>
-      <Function>4294967295</Function>
-     </Playback>
-    </Slider>
-    <Slider Caption="Prism Rotate" ID="63" WidgetStyle="Knob" InvertedAppearance="false">
-     <WindowState Visible="True" X="230" Y="45" Width="115" Height="185"/>
-     <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
-     <Reset/>
      <Level LowLimit="128" HighLimit="255" Value="128">
-      <Channel Fixture="4">10</Channel>
-      <Channel Fixture="5">10</Channel>
-      <Channel Fixture="6">10</Channel>
-      <Channel Fixture="7">10</Channel>
+      <Channel Fixture="4">5</Channel>
+      <Channel Fixture="5">5</Channel>
+      <Channel Fixture="6">5</Channel>
+      <Channel Fixture="7">5</Channel>
      </Level>
      <Playback>
       <Function>4294967295</Function>
      </Playback>
     </Slider>
    </Frame>
-   <SoloFrame Caption="Prism" ID="52">
-    <Appearance>
-     <FrameStyle>Sunken</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>4283760640</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-    <WindowState Visible="True" X="1220" Y="0" Width="120" Height="160"/>
-    <AllowChildren>True</AllowChildren>
-    <AllowResize>True</AllowResize>
-    <ShowHeader>True</ShowHeader>
-    <ShowEnableButton>True</ShowEnableButton>
-    <Mixing>False</Mixing>
-    <Collapsed>False</Collapsed>
-    <Disabled>False</Disabled>
-    <Button Caption="Off" ID="53" Icon="">
-     <WindowState Visible="True" X="10" Y="100" Width="50" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4278190080</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="113"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-    <Button Caption="On" ID="60" Icon="">
-     <WindowState Visible="True" X="10" Y="50" Width="50" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4287466893</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="114"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-   </SoloFrame>
    <SoloFrame Caption="Soft Strobes" ID="72">
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
@@ -3220,7 +3091,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="1245" Y="230" Width="200" Height="200"/>
+    <WindowState Visible="True" X="1340" Y="230" Width="200" Height="200"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -3256,7 +3127,7 @@
     </Button>
    </SoloFrame>
    <Slider Caption="Stealth Spot Intensity Global" ID="80" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="1185" Y="160" Width="60" Height="270"/>
+    <WindowState Visible="True" X="1220" Y="0" Width="60" Height="270"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -3388,6 +3259,269 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
    </SoloFrame>
+   <SoloFrame Caption="Pocket Pro Colour" ID="25">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>4283760640</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="True" X="1000" Y="0" Width="220" Height="160"/>
+    <AllowChildren>False</AllowChildren>
+    <AllowResize>False</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Mixing>False</Mixing>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="Pocket Pro - Colour - Blue" ID="26" Icon="">
+     <WindowState Visible="True" X="10" Y="50" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4278190335</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="91"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Pocket Pro - Colour - Green" ID="27" Icon="">
+     <WindowState Visible="True" X="60" Y="50" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4278255360</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="89"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Pocket Pro - Colour - Orange" ID="28" Icon="">
+     <WindowState Visible="True" X="110" Y="50" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294923520</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="87"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Pocket Pro - Colour - Pink" ID="29" Icon="">
+     <WindowState Visible="True" X="160" Y="50" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294901887</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="92"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Pocket Pro - Colour - Red" ID="30" Icon="">
+     <WindowState Visible="True" X="10" Y="100" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294901760</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="86"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Pocket Pro - Colour - UV" ID="31" Icon="">
+     <WindowState Visible="True" X="60" Y="100" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4291269371</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="90"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Pocket Pro - Colour - White" ID="32" Icon="">
+     <WindowState Visible="True" X="110" Y="100" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4291809231</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="85"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Pocket Pro - Colour - Yellow" ID="33" Icon="">
+     <WindowState Visible="True" X="160" Y="100" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294967040</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="88"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+   </SoloFrame>
+   <SoloFrame Caption="PocketPro Gobo" ID="34">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>4283760640</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="True" X="1000" Y="160" Width="220" Height="160"/>
+    <AllowChildren>False</AllowChildren>
+    <AllowResize>False</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Mixing>False</Mixing>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="" ID="35" Icon="">
+     <WindowState Visible="True" X="10" Y="50" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>pocketpro/gobo-1.png</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="145"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="" ID="36" Icon="">
+     <WindowState Visible="True" X="60" Y="50" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>pocketpro/gobo-2.png</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="146"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="" ID="37" Icon="">
+     <WindowState Visible="True" X="110" Y="50" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>pocketpro/gobo-3.png</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="147"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="" ID="38" Icon="">
+     <WindowState Visible="True" X="160" Y="50" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>pocketpro/gobo-4.png</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="148"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="" ID="39" Icon="">
+     <WindowState Visible="True" X="10" Y="100" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>pocketpro/gobo-5.png</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="149"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="" ID="40" Icon="">
+     <WindowState Visible="True" X="60" Y="100" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>pocketpro/gobo-6.png</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="150"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="" ID="52" Icon="">
+     <WindowState Visible="True" X="110" Y="100" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>pocketpro/gobo-7.png</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="151"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="" ID="53" Icon="">
+     <WindowState Visible="True" X="160" Y="100" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>pocketpro/gobo-open.png</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="144"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+   </SoloFrame>
+   <Slider Caption="Stealth Spot Shutter" ID="60" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="True" X="1280" Y="0" Width="60" Height="270"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>4283760640</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="Preset" Monitor="true">Level</SliderMode>
+    <Reset/>
+    <Level LowLimit="0" HighLimit="255" Value="10">
+     <Channel Fixture="4">6</Channel>
+     <Channel Fixture="5">6</Channel>
+     <Channel Fixture="6">6</Channel>
+     <Channel Fixture="7">6</Channel>
+    </Level>
+    <Playback>
+     <Function>4294967295</Function>
+    </Playback>
+   </Slider>
   </Frame>
   <Properties>
    <Size Width="1920" Height="1080"/>
