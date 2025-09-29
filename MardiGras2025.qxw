@@ -4,12 +4,15 @@
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.14.3</Version>
-  <Author>Kaiden Richardson</Author>
+  <Author>kaide</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
-   <Universe Name="Universe 1" ID="0"/>
+   <Universe Name="Universe 1" ID="0">
+    <Input Plugin="HID" UID="None" Line="0" Profile="PowerA Xbox"/>
+    <Output Plugin="DMX USB" UID="None" Line="0"/>
+   </Universe>
    <Universe Name="Universe 2" ID="1"/>
    <Universe Name="Universe 3" ID="2"/>
    <Universe Name="Universe 4" ID="3"/>
@@ -228,18 +231,17 @@
   <ChannelsGroup ID="23" Name="ORCAN UV" Value="0">8,9,9,9,10,9,11,9</ChannelsGroup>
   <ChannelsGroup ID="24" Name="Jett Fog" Value="0">12,0,13,0</ChannelsGroup>
   <Function ID="0" Type="RGBMatrix" Name="Master 4X Matrix">
-   <Speed FadeIn="0" FadeOut="0" Duration="375"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="707"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Plain"/>
-   <Color Index="0">4294571775</Color>
-   <Color Index="1">4294967295</Color>
-   <Color Index="3">4279369472</Color>
+   <Algorithm Type="Script">Even/Odd</Algorithm>
+   <Color Index="0">4294902015</Color>
+   <Color Index="1">4294967040</Color>
+   <Color Index="2">4294967040</Color>
+   <Color Index="3">4294967295</Color>
+   <Color Index="4">4294967295</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="orientation" Value="Horizontal"/>
-   <Property Name="presetIndex" Value="Sunset"/>
-   <Property Name="presetSize" Value="4"/>
   </Function>
   <Function ID="1" Type="Scene" Name="LasersOff" Path="Polaris/Lasers/Colours">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -256,8 +258,8 @@
   <Function ID="3" Type="Scene" Name="HouseLights" Path="ControlScenes">
    <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
    <ChannelGroupsVal>15,255,10,255,14,255,24,0</ChannelGroupsVal>
-   <FixtureVal ID="2">3,255,4,255,8,255,9,255,13,255,14,255,19,255</FixtureVal>
-   <FixtureVal ID="3">3,255,4,255,8,255,9,255,13,255,14,255,19,255</FixtureVal>
+   <FixtureVal ID="2">3,255,4,255,6,255,8,255,9,255,13,255,14,255,16,255,19,255</FixtureVal>
+   <FixtureVal ID="3">3,255,4,255,6,255,8,255,9,255,13,255,14,255,16,255,19,255</FixtureVal>
    <FixtureVal ID="12">0,0</FixtureVal>
    <FixtureVal ID="13">0,0</FixtureVal>
   </Function>
@@ -833,11 +835,15 @@
   </Function>
   <Function ID="93" Type="Scene" Name="OperationMode" Path="ControlScenes">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <ChannelGroupsVal>3,2,0,255,24,2</ChannelGroupsVal>
+   <ChannelGroupsVal>3,2,0,255,24,2,20,255</ChannelGroupsVal>
    <FixtureVal ID="0">0,255,4,2</FixtureVal>
    <FixtureVal ID="1">0,255,4,2</FixtureVal>
    <FixtureVal ID="12">0,2</FixtureVal>
    <FixtureVal ID="13">0,2</FixtureVal>
+   <FixtureVal ID="4">8,255</FixtureVal>
+   <FixtureVal ID="5">8,255</FixtureVal>
+   <FixtureVal ID="6">8,255</FixtureVal>
+   <FixtureVal ID="7">8,255</FixtureVal>
   </Function>
   <Function ID="94" Type="Scene" Name="Auto Mode Filler" Path="EffectScenes">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -898,7 +904,7 @@
    <FixtureVal ID="1">4,46</FixtureVal>
   </Function>
   <Function ID="103" Type="Chaser" Name="StrobeTwinkle">
-   <Speed FadeIn="0" FadeOut="0" Duration="93"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="176"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -920,27 +926,27 @@
   </Function>
   <Function ID="105" Type="Scene" Name="Open" Path="StealthSpot/GOBOs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <ChannelGroupsVal>17,0</ChannelGroupsVal>
-   <FixtureVal ID="4">5,0</FixtureVal>
-   <FixtureVal ID="5">5,0</FixtureVal>
-   <FixtureVal ID="6">5,0</FixtureVal>
-   <FixtureVal ID="7">5,0</FixtureVal>
+   <ChannelGroupsVal>17,4</ChannelGroupsVal>
+   <FixtureVal ID="4">5,4</FixtureVal>
+   <FixtureVal ID="5">5,4</FixtureVal>
+   <FixtureVal ID="6">5,4</FixtureVal>
+   <FixtureVal ID="7">5,4</FixtureVal>
   </Function>
   <Function ID="106" Type="Scene" Name="Triangle" Path="StealthSpot/GOBOs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <ChannelGroupsVal>17,60</ChannelGroupsVal>
-   <FixtureVal ID="4">5,60</FixtureVal>
-   <FixtureVal ID="5">5,60</FixtureVal>
-   <FixtureVal ID="6">5,60</FixtureVal>
-   <FixtureVal ID="7">5,60</FixtureVal>
+   <ChannelGroupsVal>17,95</ChannelGroupsVal>
+   <FixtureVal ID="4">5,95</FixtureVal>
+   <FixtureVal ID="5">5,95</FixtureVal>
+   <FixtureVal ID="6">5,95</FixtureVal>
+   <FixtureVal ID="7">5,95</FixtureVal>
   </Function>
   <Function ID="107" Type="Scene" Name="Dots" Path="StealthSpot/GOBOs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <ChannelGroupsVal>17,36</ChannelGroupsVal>
-   <FixtureVal ID="4">5,36</FixtureVal>
-   <FixtureVal ID="5">5,36</FixtureVal>
-   <FixtureVal ID="6">5,36</FixtureVal>
-   <FixtureVal ID="7">5,36</FixtureVal>
+   <ChannelGroupsVal>17,67</ChannelGroupsVal>
+   <FixtureVal ID="4">5,67</FixtureVal>
+   <FixtureVal ID="5">5,67</FixtureVal>
+   <FixtureVal ID="6">5,67</FixtureVal>
+   <FixtureVal ID="7">5,67</FixtureVal>
   </Function>
   <Function ID="108" Type="Scene" Name="SoftStrobeGreen" Path="EffectScenes/SoftStrobe">
    <Speed FadeIn="100" FadeOut="500" Duration="0"/>
@@ -951,11 +957,11 @@
   </Function>
   <Function ID="109" Type="Scene" Name="Sun" Path="StealthSpot/GOBOs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <ChannelGroupsVal>17,9</ChannelGroupsVal>
-   <FixtureVal ID="4">5,9</FixtureVal>
-   <FixtureVal ID="5">5,9</FixtureVal>
-   <FixtureVal ID="6">5,9</FixtureVal>
-   <FixtureVal ID="7">5,9</FixtureVal>
+   <ChannelGroupsVal>17,119</ChannelGroupsVal>
+   <FixtureVal ID="4">5,119</FixtureVal>
+   <FixtureVal ID="5">5,119</FixtureVal>
+   <FixtureVal ID="6">5,119</FixtureVal>
+   <FixtureVal ID="7">5,119</FixtureVal>
   </Function>
   <Function ID="110" Type="Scene" Name="SoftStrobeBlue" Path="EffectScenes/SoftStrobe">
    <Speed FadeIn="100" FadeOut="500" Duration="0"/>
@@ -966,19 +972,19 @@
   </Function>
   <Function ID="111" Type="Scene" Name="Spiral" Path="StealthSpot/GOBOs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <ChannelGroupsVal>17,85</ChannelGroupsVal>
-   <FixtureVal ID="4">5,85</FixtureVal>
-   <FixtureVal ID="5">5,85</FixtureVal>
-   <FixtureVal ID="6">5,85</FixtureVal>
-   <FixtureVal ID="7">5,85</FixtureVal>
+   <ChannelGroupsVal>17,46</ChannelGroupsVal>
+   <FixtureVal ID="4">5,46</FixtureVal>
+   <FixtureVal ID="5">5,46</FixtureVal>
+   <FixtureVal ID="6">5,46</FixtureVal>
+   <FixtureVal ID="7">5,46</FixtureVal>
   </Function>
   <Function ID="112" Type="Scene" Name="Star" Path="StealthSpot/GOBOs">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <ChannelGroupsVal>17,112</ChannelGroupsVal>
-   <FixtureVal ID="4">5,112</FixtureVal>
-   <FixtureVal ID="5">5,112</FixtureVal>
-   <FixtureVal ID="6">5,112</FixtureVal>
-   <FixtureVal ID="7">5,112</FixtureVal>
+   <ChannelGroupsVal>17,19</ChannelGroupsVal>
+   <FixtureVal ID="4">5,19</FixtureVal>
+   <FixtureVal ID="5">5,19</FixtureVal>
+   <FixtureVal ID="6">5,19</FixtureVal>
+   <FixtureVal ID="7">5,19</FixtureVal>
   </Function>
   <Function ID="113" Type="Scene" Name="PrismOff" Path="StealthSpot/Prism">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1039,7 +1045,7 @@
    <FixtureVal ID="7">7,128</FixtureVal>
   </Function>
   <Function ID="121" Type="Chaser" Name="StealthSpotTwinkle">
-   <Speed FadeIn="0" FadeOut="0" Duration="375"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="707"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -1061,7 +1067,7 @@
    <FixtureVal ID="3">4,64,9,64,14,64,19,64</FixtureVal>
   </Function>
   <Function ID="124" Type="Chaser" Name="4X Pulse">
-   <Speed FadeIn="0" FadeOut="0" Duration="375"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="353"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -1085,7 +1091,7 @@
    <FixtureVal ID="7">7,128</FixtureVal>
   </Function>
   <Function ID="127" Type="Chaser" Name="StealthSpotPulse">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="707"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -1093,7 +1099,7 @@
    <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">125</Step>
   </Function>
   <Function ID="128" Type="Chaser" Name="Polaris Chase 1 Colour">
-   <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="707"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -1105,7 +1111,7 @@
    <Step Number="5" FadeIn="0" Hold="0" FadeOut="0">29</Step>
   </Function>
   <Function ID="129" Type="Chaser" Name="Polaris Chase 2 Colour">
-   <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="707"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -1155,22 +1161,22 @@
     <StartOffset>270</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="2828"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
-   <Width>127</Width>
-   <Height>127</Height>
+   <Width>48</Width>
+   <Height>41</Height>
    <Rotation>0</Rotation>
    <StartOffset>0</StartOffset>
-   <IsRelative>0</IsRelative>
+   <IsRelative>1</IsRelative>
    <Axis Name="X">
-    <Offset>127</Offset>
+    <Offset>120</Offset>
     <Frequency>2</Frequency>
     <Phase>90</Phase>
    </Axis>
    <Axis Name="Y">
-    <Offset>127</Offset>
+    <Offset>142</Offset>
     <Frequency>3</Frequency>
     <Phase>0</Phase>
    </Axis>
@@ -1181,10 +1187,263 @@
   </Function>
   <Function ID="132" Type="Scene" Name="CenterDanceFloor" Path="StealthSpot/Positions">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4"/>
-   <FixtureVal ID="5"/>
-   <FixtureVal ID="6"/>
-   <FixtureVal ID="7"/>
+   <FixtureVal ID="4">0,172</FixtureVal>
+   <FixtureVal ID="5">0,172</FixtureVal>
+   <FixtureVal ID="6">0,172</FixtureVal>
+   <FixtureVal ID="7">0,172</FixtureVal>
+  </Function>
+  <Function ID="133" Type="EFX" Name="Stealth Spot Top">
+   <Fixture>
+    <ID>4</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>5</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>15</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>6</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>15</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>7</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="5656"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Line</Algorithm>
+   <Width>29</Width>
+   <Height>0</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>164</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>10</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="134" Type="Collection" Name="StealthLine">
+   <Step Number="0">132</Step>
+   <Step Number="1">133</Step>
+  </Function>
+  <Function ID="135" Type="EFX" Name="Crazy">
+   <Fixture>
+    <ID>4</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>5</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>20</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>6</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>20</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>7</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="5656"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Lissajous</Algorithm>
+   <Width>28</Width>
+   <Height>48</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>164</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>33</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="136" Type="Collection" Name="StealthCrazy">
+   <Step Number="0">132</Step>
+   <Step Number="1">135</Step>
+  </Function>
+  <Function ID="137" Type="Scene" Name="Stars" Path="StealthSpot/Positions">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>17,19,21,69</ChannelGroupsVal>
+   <FixtureVal ID="4">0,141,1,0,2,42,3,0,5,19,10,69</FixtureVal>
+   <FixtureVal ID="5">0,157,1,0,2,54,3,0,5,19,10,69</FixtureVal>
+   <FixtureVal ID="6">0,186,1,0,2,42,3,0,5,19,10,69</FixtureVal>
+   <FixtureVal ID="7">0,177,1,0,2,59,3,0,5,19,10,69</FixtureVal>
+  </Function>
+  <Function ID="138" Type="Scene" Name="Stars and Sun" Path="StealthSpot/Positions">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>17,19,21,69</ChannelGroupsVal>
+   <FixtureVal ID="4">0,143,1,0,2,0,3,0,5,117</FixtureVal>
+   <FixtureVal ID="5">0,157,1,0,2,54,3,0,5,19,10,69</FixtureVal>
+   <FixtureVal ID="6">0,186,1,0,2,42,3,0,5,19,10,69</FixtureVal>
+   <FixtureVal ID="7">0,182,1,0,2,59,3,0,5,18,10,61</FixtureVal>
+  </Function>
+  <Function ID="139" Type="Scene" Name="Beams Foreward" Path="StealthSpot/Positions">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">0,172</FixtureVal>
+   <FixtureVal ID="5">0,172</FixtureVal>
+   <FixtureVal ID="6">0,172</FixtureVal>
+   <FixtureVal ID="7">0,172</FixtureVal>
+  </Function>
+  <Function ID="140" Type="Chaser" Name="PolarisLaserChase">
+   <Speed FadeIn="0" FadeOut="0" Duration="707"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">13</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">17</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">15</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">14</Step>
+   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">19</Step>
+   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0">18</Step>
+   <Step Number="6" FadeIn="0" Hold="0" FadeOut="0">16</Step>
+   <Step Number="7" FadeIn="0" Hold="0" FadeOut="0">20</Step>
+  </Function>
+  <Function ID="141" Type="EFX" Name="Rise Up">
+   <Fixture>
+    <ID>4</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>5</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>6</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>7</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Backward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <Algorithm>Line2</Algorithm>
+   <Width>0</Width>
+   <Height>58</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>1</IsRelative>
+   <Axis Name="X">
+    <Offset>128</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>186</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="142" Type="Collection" Name="RiseUp">
+   <Step Number="0">132</Step>
+   <Step Number="1">141</Step>
+  </Function>
+  <Function ID="143" Type="EFX" Name="Fall Down">
+   <Fixture>
+    <ID>4</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>5</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>6</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>7</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <Algorithm>Line2</Algorithm>
+   <Width>0</Width>
+   <Height>58</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>1</IsRelative>
+   <Axis Name="X">
+    <Offset>128</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>186</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="144" Type="Collection" Name="Fall Down">
+   <Step Number="0">132</Step>
+   <Step Number="1">143</Step>
   </Function>
   <Monitor DisplayMode="1" ShowLabels="0">
    <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
@@ -1212,7 +1471,7 @@
    <Appearance>
     <FrameStyle>None</FrameStyle>
     <ForegroundColor>Default</ForegroundColor>
-    <BackgroundColor>Default</BackgroundColor>
+    <BackgroundColor>4278190080</BackgroundColor>
     <BackgroundImage>None</BackgroundImage>
     <Font>Default</Font>
    </Appearance>
@@ -1220,7 +1479,7 @@
     <WindowState Visible="True" X="0" Y="0" Width="150" Height="50"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
+     <ForegroundColor>4294967295</ForegroundColor>
      <BackgroundColor>Default</BackgroundColor>
      <BackgroundImage>None</BackgroundImage>
      <Font>Segoe UI,-1,28,5,700,0,0,0,0,0,0,0,0,0,0,1</Font>
@@ -1237,13 +1496,20 @@
     </Appearance>
     <Visibility>65639</Visibility>
     <AbsoluteValue Minimum="0" Maximum="1000"/>
-    <Time>375</Time>
+    <Tap>
+     <Input Universe="0" Channel="5"/>
+    </Tap>
+    <Time>707</Time>
     <Function FadeIn="0" FadeOut="0" Duration="4">103</Function>
     <Function FadeIn="0" FadeOut="0" Duration="6">121</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="8">130</Function>
     <Function FadeIn="0" FadeOut="0" Duration="6">127</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="9">133</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">140</Function>
     <Function FadeIn="0" FadeOut="0" Duration="6">129</Function>
     <Function FadeIn="0" FadeOut="0" Duration="6">128</Function>
     <Function FadeIn="0" FadeOut="0" Duration="6">0</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="9">135</Function>
     <Function FadeIn="0" FadeOut="0" Duration="5">124</Function>
    </SpeedDial>
    <SoloFrame Caption="Polaris Hashes" ID="148">
@@ -1254,7 +1520,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="15" Y="180" Width="510" Height="460"/>
+    <WindowState Visible="True" X="10" Y="180" Width="425" Height="455"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -1281,7 +1547,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/a+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="24"/>
@@ -1307,7 +1573,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/b+a.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/b+a.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="32"/>
@@ -1320,7 +1586,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/b+a+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/b+a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="33"/>
@@ -1333,7 +1599,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/b+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/b+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="31"/>
@@ -1346,7 +1612,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/b+w.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/b+w.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="38"/>
@@ -1359,7 +1625,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/b+w+a.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/b+w+a.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="35"/>
@@ -1372,7 +1638,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/b+w+a+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/b+w+a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="36"/>
@@ -1385,7 +1651,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/b+w+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/b+w+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="34"/>
@@ -1411,7 +1677,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/g+a.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/g+a.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="40"/>
@@ -1424,7 +1690,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/g+a+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/g+a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="42"/>
@@ -1437,7 +1703,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/g+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/g+b.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="54"/>
@@ -1450,7 +1716,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/g+b+a.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/g+b+a.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="46"/>
@@ -1463,7 +1729,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/g+b+a+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/g+b+a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="49"/>
@@ -1476,7 +1742,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/g+b+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/g+b+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="45"/>
@@ -1489,7 +1755,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/g+b+w.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/g+b+w.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="47"/>
@@ -1502,7 +1768,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/g+b+w+a.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/g+b+w+a.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="51"/>
@@ -1515,7 +1781,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/g+b+w+a+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/g+b+w+a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="52"/>
@@ -1528,7 +1794,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/g+b+w+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/g+b+w+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="50"/>
@@ -1541,7 +1807,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/g+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/g+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="39"/>
@@ -1554,7 +1820,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/g+w.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/g+w.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="41"/>
@@ -1567,7 +1833,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/g+w+a.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/g+w+a.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="44"/>
@@ -1580,7 +1846,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/g+w+a+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/g+w+a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="48"/>
@@ -1593,7 +1859,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/g+w+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/g+w+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="43"/>
@@ -1632,7 +1898,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+a.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+a.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="56"/>
@@ -1645,7 +1911,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+a+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="59"/>
@@ -1658,7 +1924,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+b.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+b.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="58"/>
@@ -1671,7 +1937,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+b+a.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+b+a.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="63"/>
@@ -1684,7 +1950,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+b+a+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+b+a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="71"/>
@@ -1697,7 +1963,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+b+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+b+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="62"/>
@@ -1710,7 +1976,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+b+w.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+b+w.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="64"/>
@@ -1723,7 +1989,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+b+w+a.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+b+w+a.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="73"/>
@@ -1736,7 +2002,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+b+w+a+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+b+w+a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="79"/>
@@ -1749,7 +2015,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+b+w+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+b+w+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="72"/>
@@ -1762,7 +2028,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+g.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="22"/>
@@ -1775,7 +2041,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+g+a.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g+a.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="66"/>
@@ -1788,7 +2054,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+g+a+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g+a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="74"/>
@@ -1801,7 +2067,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+g+b.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g+b.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="68"/>
@@ -1814,7 +2080,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+g+b+a.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g+b+a.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="77"/>
@@ -1827,7 +2093,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+g+b+a+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g+b+a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="81"/>
@@ -1840,7 +2106,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+g+b+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g+b+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="76"/>
@@ -1853,7 +2119,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+g+b+w.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g+b+w.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="78"/>
@@ -1866,7 +2132,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+g+b+w+a.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g+b+w+a.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="83"/>
@@ -1879,7 +2145,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+g+b+w+a+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g+b+w+a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="84"/>
@@ -1892,7 +2158,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+g+b+w+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g+b+w+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="82"/>
@@ -1905,7 +2171,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+g+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="65"/>
@@ -1918,7 +2184,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+g+w.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g+w.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="67"/>
@@ -1931,7 +2197,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+g+w+a.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g+w+a.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="75"/>
@@ -1944,7 +2210,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+g+w+a+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g+w+a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="80"/>
@@ -1957,7 +2223,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+g+w+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g+w+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="70"/>
@@ -1970,7 +2236,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="55"/>
@@ -1983,7 +2249,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+w.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+w.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="57"/>
@@ -1996,7 +2262,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+w+a.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+w+a.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="61"/>
@@ -2009,7 +2275,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+w+a+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+w+a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="69"/>
@@ -2022,7 +2288,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+w+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+w+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="60"/>
@@ -2061,7 +2327,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/w+a.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/w+a.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="30"/>
@@ -2074,7 +2340,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/w+a+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/w+a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="28"/>
@@ -2087,36 +2353,10 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/w+v.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/w+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="27"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-    <Button Caption="1 Colour Chase" ID="66" Icon="">
-     <WindowState Visible="True" X="415" Y="160" Width="85" Height="70"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="128"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-    <Button Caption="2 Colour Chase" ID="67" Icon="">
-     <WindowState Visible="True" X="415" Y="265" Width="85" Height="70"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="129"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
     </Button>
@@ -2182,7 +2422,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/r+g.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="10"/>
@@ -2212,7 +2452,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/laser2.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/laser2.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="17"/>
@@ -2225,7 +2465,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/laser4.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/laser4.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="14"/>
@@ -2238,7 +2478,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/laser7.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/laser7.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="16"/>
@@ -2251,7 +2491,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/laser6.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/laser6.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="18"/>
@@ -2264,7 +2504,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/laser8.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/laser8.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="20"/>
@@ -2277,7 +2517,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/laser1.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/laser1.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="13"/>
@@ -2290,7 +2530,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/laser3.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/laser3.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="15"/>
@@ -2303,7 +2543,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/laser5.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/laser5.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="19"/>
@@ -2454,7 +2694,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/stealthspot/3spots.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/stealthspot/3spots.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="107"/>
@@ -2480,7 +2720,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/stealthspot/spiral.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/stealthspot/spiral.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="111"/>
@@ -2493,7 +2733,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/stealthspot/star.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/stealthspot/star.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="112"/>
@@ -2506,7 +2746,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/stealthspot/flower.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/stealthspot/flower.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="109"/>
@@ -2519,7 +2759,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/stealthspot/triangle.png</BackgroundImage>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/stealthspot/triangle.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="106"/>
@@ -2622,6 +2862,7 @@
      <Function ID="9"/>
      <Action Override="1" ForceLTP="1">Flash</Action>
      <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="7"/>
     </Button>
     <Button Caption="Strobe Full" ID="48" Icon="">
      <WindowState Visible="True" X="95" Y="45" Width="70" Height="70"/>
@@ -2635,6 +2876,7 @@
      <Function ID="7"/>
      <Action Override="0" ForceLTP="0">Flash</Action>
      <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="6"/>
     </Button>
     <Button Caption="UV Toggle" ID="49" Icon="">
      <WindowState Visible="True" X="25" Y="115" Width="70" Height="70"/>
@@ -2661,6 +2903,7 @@
      <Function ID="11"/>
      <Action Override="0" ForceLTP="0">Flash</Action>
      <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="8"/>
     </Button>
     <Slider Caption="UV Intensity" ID="64" WidgetStyle="Slider" InvertedAppearance="false">
      <WindowState Visible="True" X="25" Y="185" Width="70" Height="190"/>
@@ -2684,7 +2927,7 @@
      </Playback>
     </Slider>
     <Button Caption="Strobe Twinkle" ID="8" Icon="">
-     <WindowState Visible="True" X="95" Y="185" Width="70" Height="70"/>
+     <WindowState Visible="True" X="95" Y="180" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2837,11 +3080,15 @@
       <Font>Default</Font>
      </Appearance>
      <Fixture ID="6" Head="0">
-      <Axis ID="X" LowLimit="0" HighLimit="1" Reverse="False"/>
-      <Axis ID="Y" LowLimit="0" HighLimit="1" Reverse="False"/>
+      <Axis ID="X" LowLimit="0.5" HighLimit="0.833333" Reverse="True"/>
+      <Axis ID="Y" LowLimit="0" HighLimit="0.428571" Reverse="False"/>
      </Fixture>
-     <Pan Position="0"/>
-     <Tilt Position="0"/>
+     <Pan Position="254">
+      <Input Universe="0" Channel="4"/>
+     </Pan>
+     <Tilt Position="64">
+      <Input Universe="0" Channel="3"/>
+     </Tilt>
     </XYPad>
     <XYPad Caption="XY Pad" ID="57" InvertedAppearance="0">
      <WindowState Visible="True" X="695" Y="45" Width="230" Height="230"/>
@@ -2853,11 +3100,15 @@
       <Font>Default</Font>
      </Appearance>
      <Fixture ID="7" Head="0">
-      <Axis ID="X" LowLimit="0" HighLimit="1" Reverse="False"/>
-      <Axis ID="Y" LowLimit="0" HighLimit="1" Reverse="False"/>
+      <Axis ID="X" LowLimit="0.5" HighLimit="0.833333" Reverse="True"/>
+      <Axis ID="Y" LowLimit="0" HighLimit="0.428571" Reverse="False"/>
      </Fixture>
-     <Pan Position="0"/>
-     <Tilt Position="0"/>
+     <Pan Position="254">
+      <Input Universe="0" Channel="4"/>
+     </Pan>
+     <Tilt Position="64">
+      <Input Universe="0" Channel="3"/>
+     </Tilt>
     </XYPad>
     <XYPad Caption="XY Pad" ID="58" InvertedAppearance="0">
      <WindowState Visible="True" X="235" Y="45" Width="230" Height="230"/>
@@ -2869,14 +3120,18 @@
       <Font>Default</Font>
      </Appearance>
      <Fixture ID="5" Head="0">
-      <Axis ID="X" LowLimit="0" HighLimit="1" Reverse="False"/>
-      <Axis ID="Y" LowLimit="0" HighLimit="1" Reverse="False"/>
+      <Axis ID="X" LowLimit="0.5" HighLimit="0.833333" Reverse="True"/>
+      <Axis ID="Y" LowLimit="0" HighLimit="0.428571" Reverse="False"/>
      </Fixture>
-     <Pan Position="0"/>
-     <Tilt Position="0"/>
+     <Pan Position="240">
+      <Input Universe="0" Channel="0"/>
+     </Pan>
+     <Tilt Position="101">
+      <Input Universe="0" Channel="1"/>
+     </Tilt>
     </XYPad>
     <XYPad Caption="XY Pad" ID="59" InvertedAppearance="0">
-     <WindowState Visible="True" X="10" Y="45" Width="230" Height="230"/>
+     <WindowState Visible="True" X="5" Y="45" Width="230" Height="230"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2885,11 +3140,15 @@
       <Font>Default</Font>
      </Appearance>
      <Fixture ID="4" Head="0">
-      <Axis ID="X" LowLimit="0" HighLimit="1" Reverse="False"/>
-      <Axis ID="Y" LowLimit="0" HighLimit="1" Reverse="False"/>
+      <Axis ID="X" LowLimit="0.5" HighLimit="0.833333" Reverse="True"/>
+      <Axis ID="Y" LowLimit="0" HighLimit="0.428571" Reverse="False"/>
      </Fixture>
-     <Pan Position="0"/>
-     <Tilt Position="0"/>
+     <Pan Position="239">
+      <Input Universe="0" Channel="0"/>
+     </Pan>
+     <Tilt Position="103">
+      <Input Universe="0" Channel="1"/>
+     </Tilt>
     </XYPad>
    </Frame>
    <Frame Caption="Polaris Knobs" ID="9">
@@ -2911,11 +3170,12 @@
      <WindowState Visible="True" X="0" Y="40" Width="105" Height="170"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
+      <ForegroundColor>4294967295</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
+     <Input Universe="0" Channel="0"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
      <Reset/>
      <Level LowLimit="0" HighLimit="255" Value="0">
@@ -2927,10 +3187,10 @@
      </Playback>
     </Slider>
     <Slider Caption="Hashes L" ID="11" WidgetStyle="Knob" InvertedAppearance="false">
-     <WindowState Visible="True" X="105" Y="40" Width="110" Height="170"/>
+     <WindowState Visible="True" X="100" Y="40" Width="110" Height="170"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
+      <ForegroundColor>4294967295</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
@@ -2948,7 +3208,7 @@
      <WindowState Visible="True" X="210" Y="40" Width="105" Height="170"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
+      <ForegroundColor>4294967295</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
@@ -2966,7 +3226,7 @@
      <WindowState Visible="True" X="315" Y="40" Width="105" Height="165"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
+      <ForegroundColor>4294967295</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
@@ -3016,7 +3276,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="1340" Y="0" Width="345" Height="230"/>
+    <WindowState Visible="True" X="1340" Y="0" Width="230" Height="230"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -3034,7 +3294,7 @@
      </Appearance>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
      <Reset/>
-     <Level LowLimit="0" HighLimit="255" Value="0">
+     <Level LowLimit="0" HighLimit="255" Value="243">
       <Channel Fixture="4">4</Channel>
       <Channel Fixture="5">4</Channel>
       <Channel Fixture="6">4</Channel>
@@ -3055,32 +3315,11 @@
      </Appearance>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
      <Reset/>
-     <Level LowLimit="0" HighLimit="255" Value="0">
+     <Level LowLimit="0" HighLimit="255" Value="255">
       <Channel Fixture="4">6</Channel>
       <Channel Fixture="5">6</Channel>
       <Channel Fixture="6">6</Channel>
       <Channel Fixture="7">6</Channel>
-     </Level>
-     <Playback>
-      <Function>4294967295</Function>
-     </Playback>
-    </Slider>
-    <Slider Caption="Prism Rotate" ID="63" WidgetStyle="Knob" InvertedAppearance="false">
-     <WindowState Visible="True" X="230" Y="45" Width="115" Height="185"/>
-     <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
-     <Reset/>
-     <Level LowLimit="128" HighLimit="255" Value="128">
-      <Channel Fixture="4">10</Channel>
-      <Channel Fixture="5">10</Channel>
-      <Channel Fixture="6">10</Channel>
-      <Channel Fixture="7">10</Channel>
      </Level>
      <Playback>
       <Function>4294967295</Function>
@@ -3331,7 +3570,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Function ID="4294967295"/>
+     <Function ID="137"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
     </Button>
@@ -3344,7 +3583,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Function ID="4294967295"/>
+     <Function ID="138"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
     </Button>
@@ -3370,7 +3609,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Function ID="4294967295"/>
+     <Function ID="139"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
     </Button>
@@ -3387,7 +3626,98 @@
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
     </Button>
+    <Button Caption="Line" ID="63" Icon="">
+     <WindowState Visible="True" X="75" Y="240" Width="65" Height="65"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="134"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Crazy" ID="86" Icon="">
+     <WindowState Visible="True" X="140" Y="240" Width="65" Height="65"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="135"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Rise Up" ID="88" Icon="">
+     <WindowState Visible="True" X="350" Y="40" Width="65" Height="70"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="142"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Fall Down" ID="89" Icon="">
+     <WindowState Visible="True" X="350" Y="115" Width="65" Height="70"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="144"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
    </SoloFrame>
+   <Button Caption="Laser Beat Chase" ID="87" Icon="">
+    <WindowState Visible="True" X="750" Y="320" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="140"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="1 Colour Chase" ID="66" Icon="">
+    <WindowState Visible="True" X="435" Y="345" Width="85" Height="70"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="128"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="2 Colour Chase" ID="67" Icon="">
+    <WindowState Visible="True" X="435" Y="415" Width="85" Height="70"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="129"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
   </Frame>
   <Properties>
    <Size Width="1920" Height="1080"/>
