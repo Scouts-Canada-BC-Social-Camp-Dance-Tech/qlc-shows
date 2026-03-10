@@ -938,7 +938,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/a+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="24"/>
@@ -964,7 +964,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/b+a.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/b+a.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="32"/>
@@ -977,7 +977,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/b+a+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/b+a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="33"/>
@@ -990,7 +990,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/b+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/b+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="31"/>
@@ -1003,7 +1003,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/b+w.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/b+w.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="38"/>
@@ -1016,7 +1016,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/b+w+a.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/b+w+a.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="35"/>
@@ -1029,7 +1029,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/b+w+a+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/b+w+a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="36"/>
@@ -1042,7 +1042,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/b+w+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/b+w+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="34"/>
@@ -1068,7 +1068,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/g+a.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/g+a.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="40"/>
@@ -1081,7 +1081,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/g+a+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/g+a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="42"/>
@@ -1094,7 +1094,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/g+b.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/g+b.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="54"/>
@@ -1107,7 +1107,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/g+b+a.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/g+b+a.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="46"/>
@@ -1120,7 +1120,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/g+b+a+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/g+b+a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="49"/>
@@ -1133,7 +1133,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/g+b+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/g+b+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="45"/>
@@ -1146,7 +1146,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/g+b+w.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/g+b+w.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="47"/>
@@ -1159,7 +1159,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/g+b+w+a.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/g+b+w+a.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="51"/>
@@ -1172,7 +1172,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/g+b+w+a+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/g+b+w+a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="52"/>
@@ -1185,7 +1185,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/g+b+w+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/g+b+w+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="50"/>
@@ -1198,7 +1198,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/g+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/g+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="39"/>
@@ -1211,7 +1211,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/g+w.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/g+w.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="41"/>
@@ -1224,7 +1224,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/g+w+a.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/g+w+a.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="44"/>
@@ -1237,7 +1237,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/g+w+a+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/g+w+a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="48"/>
@@ -1250,7 +1250,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/g+w+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/g+w+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="43"/>
@@ -1289,7 +1289,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+a.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+a.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="56"/>
@@ -1302,7 +1302,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+a+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="59"/>
@@ -1315,7 +1315,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+b.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+b.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="58"/>
@@ -1328,7 +1328,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+b+a.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+b+a.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="63"/>
@@ -1341,7 +1341,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+b+a+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+b+a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="71"/>
@@ -1354,7 +1354,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+b+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+b+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="62"/>
@@ -1367,7 +1367,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+b+w.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+b+w.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="64"/>
@@ -1380,7 +1380,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+b+w+a.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+b+w+a.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="73"/>
@@ -1393,7 +1393,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+b+w+a+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+b+w+a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="79"/>
@@ -1406,7 +1406,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+b+w+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+b+w+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="72"/>
@@ -1419,7 +1419,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+g.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="22"/>
@@ -1432,7 +1432,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g+a.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+g+a.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="66"/>
@@ -1445,7 +1445,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g+a+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+g+a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="74"/>
@@ -1458,7 +1458,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g+b.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+g+b.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="68"/>
@@ -1471,7 +1471,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g+b+a.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+g+b+a.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="77"/>
@@ -1484,7 +1484,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g+b+a+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+g+b+a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="81"/>
@@ -1497,7 +1497,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g+b+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+g+b+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="76"/>
@@ -1510,7 +1510,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g+b+w.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+g+b+w.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="78"/>
@@ -1523,7 +1523,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g+b+w+a.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+g+b+w+a.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="83"/>
@@ -1536,7 +1536,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g+b+w+a+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+g+b+w+a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="84"/>
@@ -1549,7 +1549,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g+b+w+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+g+b+w+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="82"/>
@@ -1562,7 +1562,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+g+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="65"/>
@@ -1575,7 +1575,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g+w.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+g+w.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="67"/>
@@ -1588,7 +1588,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g+w+a.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+g+w+a.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="75"/>
@@ -1601,7 +1601,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g+w+a+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+g+w+a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="80"/>
@@ -1614,7 +1614,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g+w+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+g+w+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="70"/>
@@ -1627,7 +1627,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="55"/>
@@ -1640,7 +1640,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+w.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+w.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="57"/>
@@ -1653,7 +1653,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+w+a.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+w+a.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="61"/>
@@ -1666,7 +1666,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+w+a+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+w+a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="69"/>
@@ -1679,7 +1679,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+w+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+w+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="60"/>
@@ -1718,7 +1718,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/w+a.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/w+a.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="30"/>
@@ -1731,7 +1731,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/w+a+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/w+a+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="28"/>
@@ -1744,7 +1744,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/w+v.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/w+v.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="27"/>
@@ -1813,7 +1813,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/r+g.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/r+g.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="10"/>
@@ -1843,7 +1843,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/laser2.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/laser2.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="17"/>
@@ -1856,7 +1856,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/laser4.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/laser4.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="14"/>
@@ -1869,7 +1869,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/laser7.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/laser7.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="16"/>
@@ -1882,7 +1882,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/laser6.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/laser6.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="18"/>
@@ -1895,7 +1895,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/laser8.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/laser8.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="20"/>
@@ -1908,7 +1908,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/laser1.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/laser1.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="13"/>
@@ -1921,7 +1921,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/laser3.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/laser3.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="15"/>
@@ -1934,7 +1934,7 @@
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/laser5.png</BackgroundImage>
+      <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/Fixtures/polaris2/laser5.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
      <Function ID="19"/>
