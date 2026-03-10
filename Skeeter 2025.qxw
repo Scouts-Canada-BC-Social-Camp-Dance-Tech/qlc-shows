@@ -1666,7 +1666,7 @@
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
        <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/fixtures/polaris2/pattern1.jpg</BackgroundImage>
+       <BackgroundImage>@SHOW_ROOT@/fixtures/polaris2/pattern1.jpg</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
       <Function ID="35"/>
@@ -1679,7 +1679,7 @@
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
        <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/fixtures/polaris2/pattern2.jpg</BackgroundImage>
+       <BackgroundImage>@SHOW_ROOT@/fixtures/polaris2/pattern2.jpg</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
       <Function ID="36"/>
@@ -1692,7 +1692,7 @@
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
        <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/fixtures/polaris2/pattern3.jpg</BackgroundImage>
+       <BackgroundImage>@SHOW_ROOT@/fixtures/polaris2/pattern3.jpg</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
       <Function ID="37"/>
@@ -1705,7 +1705,7 @@
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
        <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/fixtures/polaris2/pattern4.jpg</BackgroundImage>
+       <BackgroundImage>@SHOW_ROOT@/fixtures/polaris2/pattern4.jpg</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
       <Function ID="38"/>
@@ -1718,7 +1718,7 @@
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
        <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/fixtures/polaris2/pattern5.jpg</BackgroundImage>
+       <BackgroundImage>@SHOW_ROOT@/fixtures/polaris2/pattern5.jpg</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
       <Function ID="39"/>
@@ -1731,7 +1731,7 @@
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
        <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/fixtures/polaris2/pattern6.jpg</BackgroundImage>
+       <BackgroundImage>@SHOW_ROOT@/fixtures/polaris2/pattern6.jpg</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
       <Function ID="40"/>
@@ -1744,7 +1744,7 @@
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
        <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/fixtures/polaris2/pattern7.jpg</BackgroundImage>
+       <BackgroundImage>@SHOW_ROOT@/fixtures/polaris2/pattern7.jpg</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
       <Function ID="41"/>
@@ -1757,7 +1757,7 @@
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
        <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>C:\Users\Kaiden Richardson\Documents\qlc-shows/fixtures/polaris2/pattern8.jpg</BackgroundImage>
+       <BackgroundImage>@SHOW_ROOT@/fixtures/polaris2/pattern8.jpg</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
       <Function ID="42"/>
