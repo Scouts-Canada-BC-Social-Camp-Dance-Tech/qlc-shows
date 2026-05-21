@@ -4,7 +4,7 @@
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>5.2.1</Version>
-  <Author>Kaiden Richardson</Author>
+  <Author>kaide</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
@@ -14,6 +14,9 @@
     <Input Plugin="MIDI" UID="MPD218" Line="0" Profile="Akai MPD218">
      <PluginParameters MIDISendNoteOff="false"/>
     </Input>
+    <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: B003MLF9)" Line="0">
+     <PluginParameters UniverseChannels="182"/>
+    </Output>
    </Universe>
    <Universe Name="Universe 2" ID="1"/>
    <Universe Name="Universe 3" ID="2"/>
@@ -142,34 +145,34 @@
   <Fixture>
    <Manufacturer>American DJ</Manufacturer>
    <Model>Fog Fury Jett</Model>
-   <Mode>1 Channel</Mode>
+   <Mode>3 Channel</Mode>
    <ID>15</ID>
    <Name>L Fog Fury Jett</Name>
    <Universe>0</Universe>
    <Address>176</Address>
-   <Channels>1</Channels>
+   <Channels>3</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>American DJ</Manufacturer>
    <Model>Fog Fury Jett</Model>
-   <Mode>1 Channel</Mode>
+   <Mode>3 Channel</Mode>
    <ID>16</ID>
    <Name>R Fog Fury Jett</Name>
    <Universe>0</Universe>
-   <Address>177</Address>
-   <Channels>1</Channels>
+   <Address>179</Address>
+   <Channels>3</Channels>
   </Fixture>
   <FixtureGroup ID="0">
    <Name>RGB 4 Bars</Name>
-   <Size X="8" Y="1"/>
+   <Size X="9" Y="1"/>
    <Head X="0" Y="0" Fixture="6">0</Head>
    <Head X="1" Y="0" Fixture="6">1</Head>
    <Head X="2" Y="0" Fixture="6">2</Head>
    <Head X="3" Y="0" Fixture="6">3</Head>
-   <Head X="4" Y="0" Fixture="7">0</Head>
-   <Head X="5" Y="0" Fixture="7">1</Head>
-   <Head X="6" Y="0" Fixture="7">2</Head>
-   <Head X="7" Y="0" Fixture="7">3</Head>
+   <Head X="5" Y="0" Fixture="7">0</Head>
+   <Head X="6" Y="0" Fixture="7">1</Head>
+   <Head X="7" Y="0" Fixture="7">2</Head>
+   <Head X="8" Y="0" Fixture="7">3</Head>
   </FixtureGroup>
   <FixtureGroup ID="1">
    <Name>RGBAll</Name>
@@ -223,7 +226,7 @@
    <FixtureVal ID="16">0,0</FixtureVal>
   </Function>
   <Function ID="1" Type="RGBMatrix" Name="RGB-4Bars-Colour">
-   <Speed FadeIn="0" FadeOut="0" Duration="393"/>
+   <Speed FadeIn="7560" FadeOut="7560" Duration="7560"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Stripes</Algorithm>
@@ -238,14 +241,17 @@
    <FixtureVal ID="7">0,0,1,0,2,0,7,0,8,0,9,0,14,0,15,0,16,0,21,0,22,0,23,0</FixtureVal>
   </Function>
   <Function ID="3" Type="RGBMatrix" Name="RGB-4Bars-Intensity">
-   <Speed FadeIn="0" FadeOut="0" Duration="393"/>
+   <Speed FadeIn="7560" FadeOut="120960" Duration="7560"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Plain"/>
+   <Algorithm Type="Script">Waves</Algorithm>
    <Color Index="0">4294967295</Color>
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>0</FixtureGroup>
+   <Property Name="direction" Value="Right"/>
    <Property Name="orientation" Value="Horizontal"/>
+   <Property Name="tailfade" Value="Yes"/>
+   <Property Name="taillength" Value="100"/>
   </Function>
   <Function ID="4" Type="RGBMatrix" Name="Everything">
    <Speed FadeIn="0" FadeOut="0" Duration="500"/>
@@ -2106,26 +2112,25 @@
    <FixtureVal ID="1">9,114</FixtureVal>
   </Function>
   <Function ID="33" Type="Chaser" Name="LaserChaser">
-   <Speed FadeIn="0" FadeOut="0" Duration="393"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="7560"/>
    <Direction>Forward</Direction>
    <RunOrder>PingPong</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="1000" FadeOut="0">25</Step>
-   <Step Number="1" FadeIn="0" Hold="1000" FadeOut="0">26</Step>
-   <Step Number="2" FadeIn="0" Hold="1000" FadeOut="0">26</Step>
-   <Step Number="3" FadeIn="0" Hold="1000" FadeOut="0">27</Step>
-   <Step Number="4" FadeIn="0" Hold="1000" FadeOut="0">28</Step>
-   <Step Number="5" FadeIn="0" Hold="1000" FadeOut="0">29</Step>
-   <Step Number="6" FadeIn="0" Hold="1000" FadeOut="0">30</Step>
-   <Step Number="7" FadeIn="0" Hold="1000" FadeOut="0">31</Step>
-   <Step Number="8" FadeIn="0" Hold="1000" FadeOut="0">32</Step>
+   <Step Number="0" FadeIn="0" Hold="926" FadeOut="0">26</Step>
+   <Step Number="1" FadeIn="0" Hold="926" FadeOut="0">26</Step>
+   <Step Number="2" FadeIn="0" Hold="926" FadeOut="0">27</Step>
+   <Step Number="3" FadeIn="0" Hold="926" FadeOut="0">28</Step>
+   <Step Number="4" FadeIn="0" Hold="926" FadeOut="0">29</Step>
+   <Step Number="5" FadeIn="0" Hold="926" FadeOut="0">30</Step>
+   <Step Number="6" FadeIn="0" Hold="926" FadeOut="0">31</Step>
+   <Step Number="7" FadeIn="0" Hold="926" FadeOut="0">32</Step>
   </Function>
   <Function ID="34" Type="Scene" Name="PocketProRed" Path="PocketPros">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="2">4,0</FixtureVal>
-   <FixtureVal ID="3">4,0</FixtureVal>
-   <FixtureVal ID="4">4,0</FixtureVal>
-   <FixtureVal ID="5">4,0</FixtureVal>
+   <Speed FadeIn="0" FadeOut="0" Duration="7560"/>
+   <FixtureVal ID="2">4,8</FixtureVal>
+   <FixtureVal ID="3">4,8</FixtureVal>
+   <FixtureVal ID="4">4,8</FixtureVal>
+   <FixtureVal ID="5">4,8</FixtureVal>
   </Function>
   <Function ID="35" Type="Scene" Name="PocketProOrange" Path="PocketPros">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -2142,14 +2147,14 @@
    <FixtureVal ID="5">4,22</FixtureVal>
   </Function>
   <Function ID="37" Type="Scene" Name="PocketProGreen" Path="PocketPros">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="7560"/>
    <FixtureVal ID="2">4,29</FixtureVal>
    <FixtureVal ID="3">4,29</FixtureVal>
    <FixtureVal ID="4">4,29</FixtureVal>
    <FixtureVal ID="5">4,29</FixtureVal>
   </Function>
   <Function ID="38" Type="Scene" Name="PocketProUV" Path="PocketPros">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="7560"/>
    <FixtureVal ID="2">4,36</FixtureVal>
    <FixtureVal ID="3">4,36</FixtureVal>
    <FixtureVal ID="4">4,36</FixtureVal>
@@ -2163,7 +2168,7 @@
    <FixtureVal ID="5">4,43</FixtureVal>
   </Function>
   <Function ID="40" Type="Scene" Name="PocketProPink" Path="PocketPros">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="7560"/>
    <FixtureVal ID="2">4,50</FixtureVal>
    <FixtureVal ID="3">4,50</FixtureVal>
    <FixtureVal ID="4">4,50</FixtureVal>
@@ -2177,14 +2182,14 @@
    <FixtureVal ID="5">4,58</FixtureVal>
   </Function>
   <Function ID="42" Type="Scene" Name="PocketProRedOrange" Path="PocketPros">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="7560"/>
    <FixtureVal ID="2">4,68</FixtureVal>
    <FixtureVal ID="3">4,68</FixtureVal>
    <FixtureVal ID="4">4,68</FixtureVal>
    <FixtureVal ID="5">4,68</FixtureVal>
   </Function>
   <Function ID="43" Type="Scene" Name="PocketProOrangeYellow" Path="PocketPros">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="7560"/>
    <FixtureVal ID="2">4,77</FixtureVal>
    <FixtureVal ID="3">4,77</FixtureVal>
    <FixtureVal ID="4">4,77</FixtureVal>
@@ -2205,7 +2210,7 @@
    <FixtureVal ID="5">4,97</FixtureVal>
   </Function>
   <Function ID="46" Type="Scene" Name="PocketProUVBlue" Path="PocketPros">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="7560"/>
    <FixtureVal ID="2">4,107</FixtureVal>
    <FixtureVal ID="3">4,107</FixtureVal>
    <FixtureVal ID="4">4,107</FixtureVal>
@@ -2275,17 +2280,17 @@
    <FixtureVal ID="5">5,57</FixtureVal>
   </Function>
   <Function ID="56" Type="Scene" Name="PocketProWhite" Path="PocketPros">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="7560"/>
    <FixtureVal ID="2">4,0</FixtureVal>
    <FixtureVal ID="3">4,0</FixtureVal>
    <FixtureVal ID="4">4,0</FixtureVal>
    <FixtureVal ID="5">4,0</FixtureVal>
   </Function>
   <Function ID="57" Type="RGBMatrix" Name="PocketProIntensity">
-   <Speed FadeIn="500" FadeOut="500" Duration="393"/>
+   <Speed FadeIn="500" FadeOut="500" Duration="7560"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Alternate</Algorithm>
+   <Algorithm Type="Plain"/>
    <Color Index="0">4294967295</Color>
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>3</FixtureGroup>
@@ -2398,7 +2403,7 @@
    <FixtureVal ID="1">1,70</FixtureVal>
   </Function>
   <Function ID="79" Type="Chaser" Name="2ColourChase">
-   <Speed FadeIn="0" FadeOut="0" Duration="393"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="7560"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -2420,7 +2425,7 @@
    <Step Number="15" FadeIn="0" Hold="1000" FadeOut="0">77</Step>
   </Function>
   <Function ID="80" Type="Chaser" Name="1ColourChase">
-   <Speed FadeIn="98" FadeOut="0" Duration="393"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="7560"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -2524,7 +2529,7 @@
    <FixtureVal ID="1">3,0,4,45,7,0</FixtureVal>
   </Function>
   <Function ID="96" Type="Chaser" Name="PolarisSparkle">
-   <Speed FadeIn="0" FadeOut="0" Duration="393"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="468"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -2537,6 +2542,443 @@
    <Step Number="6" FadeIn="0" Hold="125" FadeOut="0">93</Step>
    <Step Number="7" FadeIn="0" Hold="125" FadeOut="0">94</Step>
    <Step Number="8" FadeIn="0" Hold="125" FadeOut="0">95</Step>
+  </Function>
+  <Function ID="97" Type="Scene" Name="PocketPros" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">7,0</FixtureVal>
+   <FixtureVal ID="3">7,0</FixtureVal>
+   <FixtureVal ID="4">7,0</FixtureVal>
+   <FixtureVal ID="5">7,0</FixtureVal>
+  </Function>
+  <Function ID="98" Type="Sequence" Name="PocketProIntensity Sequence" BoundScene="97">
+   <Speed FadeIn="500" FadeOut="500" Duration="283"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
+   <Step Number="0" FadeIn="500" Hold="4294967079" FadeOut="500" Values="4">2:7,255:3:7,255:4:7,255:5:7,255</Step>
+  </Function>
+  <Function ID="99" Type="Scene" Name="PocketPros" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">7,0</FixtureVal>
+   <FixtureVal ID="3">7,0</FixtureVal>
+   <FixtureVal ID="4">7,0</FixtureVal>
+   <FixtureVal ID="5">7,0</FixtureVal>
+  </Function>
+  <Function ID="100" Type="EFX" Name="New EFX 100">
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>100</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>4</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>180</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>5</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>280</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="30240"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Circle</Algorithm>
+   <Width>23</Width>
+   <Height>32</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>126</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>201</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="101" Type="EFX" Name="New EFX 101">
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>90</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>4</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>180</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>5</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>270</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="30240"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Diamond</Algorithm>
+   <Width>32</Width>
+   <Height>32</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>118</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>202</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="102" Type="EFX" Name="New EFX 102">
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>107</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>4</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>155</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>5</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>267</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="30240"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Lissajous</Algorithm>
+   <Width>28</Width>
+   <Height>32</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>136</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>200</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="103" Type="EFX" Name="New EFX 100 (Copy)">
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>90</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>4</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>180</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>5</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>270</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="30240"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Circle</Algorithm>
+   <Width>23</Width>
+   <Height>32</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>126</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>201</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="104" Type="EFX" Name="New EFX 100 (Dupe)">
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>3</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>90</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>4</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>180</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>5</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>270</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="30240"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Circle</Algorithm>
+   <Width>23</Width>
+   <Height>32</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>129</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>201</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="105" Type="Scene" Name="StealthSpotStop">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">0,27,1,90,2,47,3,226</FixtureVal>
+   <FixtureVal ID="3">0,13,1,135,2,74,3,130</FixtureVal>
+   <FixtureVal ID="4">0,80,1,247,2,79,3,161</FixtureVal>
+   <FixtureVal ID="5">0,77,1,237,2,79,3,161</FixtureVal>
+  </Function>
+  <Function ID="106" Type="Scene" Name="RGB 4 Bars" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">6,0,13,0,20,0,27,0</FixtureVal>
+   <FixtureVal ID="7">6,0,13,0,20,0,27,0</FixtureVal>
+  </Function>
+  <Function ID="107" Type="Sequence" Name="RGB-4Bars-Intensity Solid" BoundScene="106">
+   <Speed FadeIn="567" FadeOut="567" Duration="1890"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
+   <Step Number="0" FadeIn="567" Hold="0" FadeOut="567" Values="8">6:6,255,13,255,20,255,27,255:7:6,255,13,255,20,255,27,255</Step>
+  </Function>
+  <Function ID="108" Type="Scene" Name="RGB 4 Bars" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">6,0,13,0,20,0,27,0</FixtureVal>
+   <FixtureVal ID="7">6,0,13,0,20,0,27,0</FixtureVal>
+  </Function>
+  <Function ID="109" Type="Sequence" Name="RGB-4Bars-Intensity EvenOdd" BoundScene="108">
+   <Speed FadeIn="567" FadeOut="567" Duration="7560"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="1000" FadeOut="0" Values="8">6:6,255,20,255:7:13,255,27,255</Step>
+   <Step Number="1" FadeIn="0" Hold="1000" FadeOut="0" Values="8">6:13,255,27,255:7:6,255,20,255</Step>
+  </Function>
+  <Function ID="110" Type="Scene" Name="RGB 4 Bars" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">6,0,13,0,20,0,27,0</FixtureVal>
+   <FixtureVal ID="7">6,0,13,0,20,0,27,0</FixtureVal>
+  </Function>
+  <Function ID="111" Type="Sequence" Name="RGB-4Bars-Intensity FillUnfill" BoundScene="110">
+   <Speed FadeIn="567" FadeOut="567" Duration="7560"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="8"/>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="8">6:27,255:7:6,255</Step>
+   <Step Number="2" FadeIn="0" Hold="500" FadeOut="0" Values="8">6:20,255,27,255:7:6,255,13,255</Step>
+   <Step Number="3" FadeIn="0" Hold="500" FadeOut="0" Values="8">6:13,255,20,255,27,255:7:6,255,13,255,20,255</Step>
+   <Step Number="4" FadeIn="0" Hold="500" FadeOut="0" Values="8">6:6,255,13,255,20,255,27,255:7:6,255,13,255,20,255,27,255</Step>
+   <Step Number="5" FadeIn="0" Hold="500" FadeOut="0" Values="8">6:6,255,13,255,20,255,27,255:7:6,255,13,255,20,255,27,255</Step>
+   <Step Number="6" FadeIn="0" Hold="500" FadeOut="0" Values="8">6:6,255,13,255,20,255:7:13,255,20,255,27,255</Step>
+   <Step Number="7" FadeIn="0" Hold="500" FadeOut="0" Values="8">6:6,255,13,255:7:20,255,27,255</Step>
+   <Step Number="8" FadeIn="0" Hold="500" FadeOut="0" Values="8">6:6,255:7:27,255</Step>
+  </Function>
+  <Function ID="112" Type="Scene" Name="RGB 4 Bars" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">6,0,13,0,20,0,27,0</FixtureVal>
+   <FixtureVal ID="7">6,0,13,0,20,0,27,0</FixtureVal>
+  </Function>
+  <Function ID="113" Type="Sequence" Name="RGB-4Bars-Intensity RandomFill" BoundScene="112">
+   <Speed FadeIn="567" FadeOut="567" Duration="7560"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="1000" FadeOut="0" Values="8">6:13,255</Step>
+   <Step Number="1" FadeIn="0" Hold="1000" FadeOut="0" Values="8">6:13,255:7:27,255</Step>
+   <Step Number="2" FadeIn="0" Hold="1000" FadeOut="0" Values="8">6:13,255:7:27,255</Step>
+   <Step Number="3" FadeIn="0" Hold="1000" FadeOut="0" Values="8">6:6,255,13,255:7:27,255</Step>
+   <Step Number="4" FadeIn="0" Hold="1000" FadeOut="0" Values="8">6:6,255,13,255:7:13,255,27,255</Step>
+   <Step Number="5" FadeIn="0" Hold="1000" FadeOut="0" Values="8">6:6,255,13,255:7:13,255,20,255,27,255</Step>
+   <Step Number="6" FadeIn="0" Hold="1000" FadeOut="0" Values="8">6:6,255,13,255,20,255:7:13,255,20,255,27,255</Step>
+   <Step Number="7" FadeIn="0" Hold="1000" FadeOut="0" Values="8">6:6,255,13,255,20,255,27,255:7:13,255,20,255,27,255</Step>
+   <Step Number="8" FadeIn="0" Hold="1000" FadeOut="0" Values="8">6:6,255,13,255,20,255,27,255:7:6,255,13,255,20,255,27,255</Step>
+  </Function>
+  <Function ID="114" Type="Scene" Name="RGB 4 Bars" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">6,0,13,0,20,0,27,0</FixtureVal>
+   <FixtureVal ID="7">6,0,13,0,20,0,27,0</FixtureVal>
+  </Function>
+  <Function ID="115" Type="Sequence" Name="RGB-4Bars-Intensity Waves" BoundScene="114">
+   <Speed FadeIn="250" FadeOut="250" Duration="7560"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
+   <Step Number="0" FadeIn="250" Hold="0" FadeOut="250" Values="8">6:6,255</Step>
+   <Step Number="1" FadeIn="250" Hold="0" FadeOut="250" Values="8">6:6,227,13,255</Step>
+   <Step Number="2" FadeIn="250" Hold="0" FadeOut="250" Values="8">6:6,199,13,227,20,255</Step>
+   <Step Number="3" FadeIn="250" Hold="0" FadeOut="250" Values="8">6:6,171,13,199,20,227,27,255</Step>
+   <Step Number="4" FadeIn="250" Hold="0" FadeOut="250" Values="8">6:6,142,13,171,20,199,27,227</Step>
+   <Step Number="5" FadeIn="250" Hold="0" FadeOut="250" Values="8">6:6,112,13,142,20,171,27,199:7:6,255</Step>
+   <Step Number="6" FadeIn="250" Hold="0" FadeOut="250" Values="8">6:6,84,13,112,20,142,27,171:7:6,227,13,255</Step>
+   <Step Number="7" FadeIn="250" Hold="0" FadeOut="250" Values="8">6:6,56,13,84,20,112,27,142:7:6,199,13,227,20,255</Step>
+   <Step Number="8" FadeIn="250" Hold="0" FadeOut="250" Values="8">6:6,28,13,56,20,84,27,112:7:6,171,13,199,20,227,27,255</Step>
+   <Step Number="9" FadeIn="250" Hold="0" FadeOut="250" Values="8">6:13,28,20,56,27,84:7:6,142,13,171,20,199,27,227</Step>
+   <Step Number="10" FadeIn="250" Hold="0" FadeOut="250" Values="8">6:20,28,27,56:7:6,112,13,142,20,171,27,199</Step>
+   <Step Number="11" FadeIn="250" Hold="0" FadeOut="250" Values="8">6:27,28:7:6,84,13,112,20,142,27,171</Step>
+   <Step Number="12" FadeIn="250" Hold="0" FadeOut="250" Values="8">7:6,56,13,84,20,112,27,142</Step>
+   <Step Number="13" FadeIn="250" Hold="0" FadeOut="250" Values="8">7:6,28,13,56,20,84,27,112</Step>
+   <Step Number="14" FadeIn="250" Hold="0" FadeOut="250" Values="8">7:13,28,20,56,27,84</Step>
+   <Step Number="15" FadeIn="250" Hold="0" FadeOut="250" Values="8">7:20,28,27,56</Step>
+   <Step Number="16" FadeIn="250" Hold="0" FadeOut="250" Values="8">7:27,28</Step>
+  </Function>
+  <Function ID="116" Type="Scene" Name="Dance Circle">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2"/>
+   <FixtureVal ID="3"/>
+   <FixtureVal ID="4"/>
+   <FixtureVal ID="5"/>
+  </Function>
+  <Function ID="117" Type="Chaser" Name="PocketProRotate">
+   <Speed FadeIn="0" FadeOut="0" Duration="7560"/>
+   <Direction>Forward</Direction>
+   <RunOrder>PingPong</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="463" FadeOut="0">56</Step>
+   <Step Number="1" FadeIn="0" Hold="463" FadeOut="0">34</Step>
+   <Step Number="2" FadeIn="0" Hold="463" FadeOut="0">35</Step>
+   <Step Number="3" FadeIn="0" Hold="463" FadeOut="0">36</Step>
+   <Step Number="4" FadeIn="0" Hold="463" FadeOut="0">37</Step>
+   <Step Number="5" FadeIn="0" Hold="463" FadeOut="0">38</Step>
+   <Step Number="6" FadeIn="0" Hold="463" FadeOut="0">39</Step>
+   <Step Number="7" FadeIn="0" Hold="463" FadeOut="0">40</Step>
+  </Function>
+  <Function ID="118" Type="Scene" Name="PocketProRotateScene">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2"/>
+   <FixtureVal ID="3"/>
+   <FixtureVal ID="4"/>
+   <FixtureVal ID="5"/>
+  </Function>
+  <Function ID="119" Type="Scene" Name="Lights Up">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+  </Function>
+  <Function ID="120" Type="Scene" Name="New Scene 120">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">0,48,1,184,2,42,3,115</FixtureVal>
+   <FixtureVal ID="3">0,54,1,22,2,48,3,26</FixtureVal>
+   <FixtureVal ID="4">0,60,1,173,2,56,3,57</FixtureVal>
+   <FixtureVal ID="5">0,44,1,29,2,44,3,57</FixtureVal>
+  </Function>
+  <Function ID="121" Type="Scene" Name="New Scene 121">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">0,48,1,184,2,42,3,115</FixtureVal>
+   <FixtureVal ID="3">0,54,1,22,2,48,3,26</FixtureVal>
+   <FixtureVal ID="4">0,60,1,173,2,56,3,57</FixtureVal>
+   <FixtureVal ID="5">0,44,1,29,2,44,3,57</FixtureVal>
+  </Function>
+  <Function ID="122" Type="Scene" Name="Stealth Spots Down">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">0,48,1,184,2,42,3,115</FixtureVal>
+   <FixtureVal ID="3">0,54,1,22,2,48,3,26</FixtureVal>
+   <FixtureVal ID="4">0,60,1,173,2,56,3,57</FixtureVal>
+   <FixtureVal ID="5">0,44,1,29,2,44,3,57</FixtureVal>
+  </Function>
+  <Function ID="123" Type="Scene" Name="StealthSpotsDown">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">0,48,1,0,2,20,3,0</FixtureVal>
+   <FixtureVal ID="3">0,56,1,0,2,20,3,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,22,3,0</FixtureVal>
+   <FixtureVal ID="5">0,50,1,0,2,22,3,0</FixtureVal>
+  </Function>
+  <Function ID="124" Type="Scene" Name="StealthSpotUp">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">0,46,1,184,2,18,3,115</FixtureVal>
+   <FixtureVal ID="3">0,53,1,32,2,20,3,15</FixtureVal>
+   <FixtureVal ID="4">0,60,1,173,2,23,3,57</FixtureVal>
+   <FixtureVal ID="5">0,51,1,29,2,22,3,57</FixtureVal>
   </Function>
   <Monitor DisplayMode="0" ShowLabels="0">
    <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
@@ -2572,10 +3014,11 @@
    <Collapsed>False</Collapsed>
    <Disabled>False</Disabled>
    <Slider Caption="PocketProIntensity" ID="79" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="810" Y="662" Width="73" Height="294"/>
+    <WindowState Visible="True" X="364" Y="285" Width="79" Height="269"/>
     <Appearance>
      <BackgroundColor>4278190234</BackgroundColor>
     </Appearance>
+    <Input ID="0" Universe="0" Channel="1"/>
     <SliderMode ValueDisplayStyle="Percentage" Monitor="true">Level</SliderMode>
     <Level LowLimit="0" HighLimit="255" Value="0">
      <Channel Fixture="2">7</Channel>
@@ -2585,7 +3028,7 @@
     </Level>
    </Slider>
    <Slider Caption="PocketProGoboSpin" ID="80" WidgetStyle="Knob" InvertedAppearance="false">
-    <WindowState Visible="True" X="721" Y="456" Width="117" Height="206"/>
+    <WindowState Visible="True" X="348" Y="554" Width="117" Height="206"/>
     <Appearance>
      <BackgroundColor>4278190234</BackgroundColor>
     </Appearance>
@@ -2597,394 +3040,81 @@
      <Channel Fixture="5">5</Channel>
     </Level>
    </Slider>
-   <Button Caption="LaserChase" ID="20">
-    <WindowState Visible="True" X="942" Y="309" Width="88" Height="88"/>
-    <Appearance>
-     <BackgroundColor>4282664004</BackgroundColor>
-    </Appearance>
-    <Function ID="33"/>
-    <Action>Toggle</Action>
-   </Button>
-   <Matrix Caption="PocketProIntensity" ID="88">
-    <WindowState Visible="True" X="883" Y="751" Width="294" Height="132"/>
+   <SoloFrame Caption="PocketProGobos" ID="46">
     <Appearance>
      <BackgroundColor>4278190234</BackgroundColor>
     </Appearance>
-    <Function ID="4294967295" InstantApply="true"/>
-    <Visibility>15</Visibility>
-   </Matrix>
-   <Matrix Caption="RGBBar Intensity" ID="41">
-    <WindowState Visible="True" X="0" Y="603" Width="368" Height="147"/>
-    <Appearance>
-     <BackgroundColor>4288282624</BackgroundColor>
-    </Appearance>
-    <Function ID="3" InstantApply="true"/>
-    <Visibility>15</Visibility>
-    <Input ID="0" Universe="0" Channel="1"/>
-   </Matrix>
-   <Matrix Caption="RGBBar Colour" ID="40">
-    <WindowState Visible="True" X="0" Y="338" Width="368" Height="265"/>
-    <Appearance>
-     <BackgroundColor>4288282624</BackgroundColor>
-    </Appearance>
-    <Function ID="1" InstantApply="true"/>
-    <Visibility>255</Visibility>
-    <Input ID="0" Universe="0" Channel="0"/>
-   </Matrix>
-   <SoloFrame Caption="Solo Frame 64" ID="63">
-    <Appearance>
-     <BackgroundColor>4278190234</BackgroundColor>
-    </Appearance>
-    <WindowState Visible="True" X="368" Y="662" Width="441" Height="294"/>
+    <WindowState Visible="True" X="0" Y="554" Width="353" Height="206"/>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>True</ShowEnableButton>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Button Caption="PocketProBluePink" ID="77">
-     <WindowState Visible="True" X="265" Y="206" Width="83" Height="83"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="47"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="PocketProOrange" ID="68">
-     <WindowState Visible="True" X="353" Y="29" Width="83" Height="83"/>
-     <Appearance>
-      <BackgroundColor>4294940928</BackgroundColor>
-     </Appearance>
-     <Function ID="35"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="PocketProUV" ID="74">
-     <WindowState Visible="True" X="0" Y="206" Width="83" Height="83"/>
-     <Appearance>
-      <BackgroundColor>4289541119</BackgroundColor>
-     </Appearance>
-     <Function ID="38"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="PocketProYellowGreen" ID="71">
-     <WindowState Visible="True" X="176" Y="117" Width="83" Height="83"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="44"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="PocketProOrangeYellow" ID="69">
-     <WindowState Visible="True" X="0" Y="117" Width="83" Height="83"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="43"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="PocketProWhite" ID="64">
+    <Button Caption="PocketProGoboNone" ID="55">
      <WindowState Visible="True" X="0" Y="29" Width="83" Height="83"/>
      <Appearance>
-      <BackgroundColor>4294967295</BackgroundColor>
+      <BackgroundImage>pocketpro/gobo-open.png</BackgroundImage>
      </Appearance>
-     <Function ID="56"/>
+     <Function ID="48"/>
      <Action>Toggle</Action>
     </Button>
-    <Button Caption="PocketProBlue" ID="76">
-     <WindowState Visible="True" X="176" Y="206" Width="83" Height="83"/>
+    <Button Caption="PocketProGobo4" ID="59">
+     <WindowState Visible="True" X="0" Y="117" Width="83" Height="83"/>
      <Appearance>
-      <BackgroundColor>4278255615</BackgroundColor>
+      <BackgroundImage>pocketpro/gobo-4.png</BackgroundImage>
      </Appearance>
-     <Function ID="39"/>
+     <Function ID="52"/>
      <Action>Toggle</Action>
     </Button>
-    <Button Caption="PocketProYellow" ID="70">
+    <Button Caption="PocketProGobo6" ID="61">
+     <WindowState Visible="True" X="176" Y="117" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundImage>pocketpro/gobo-6.png</BackgroundImage>
+     </Appearance>
+     <Function ID="54"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="PocketProGobo5" ID="60">
      <WindowState Visible="True" X="88" Y="117" Width="83" Height="83"/>
      <Appearance>
-      <BackgroundColor>4294967040</BackgroundColor>
+      <BackgroundImage>pocketpro/gobo-5.png</BackgroundImage>
      </Appearance>
-     <Function ID="36"/>
+     <Function ID="53"/>
      <Action>Toggle</Action>
     </Button>
-    <Button Caption="PocketProGreen" ID="72">
-     <WindowState Visible="True" X="265" Y="117" Width="83" Height="83"/>
-     <Appearance>
-      <BackgroundColor>4278255360</BackgroundColor>
-     </Appearance>
-     <Function ID="37"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="PocketProWhiteRed" ID="65">
-     <WindowState Visible="True" X="88" Y="29" Width="83" Height="83"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="41"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="PocketProGreenUV" ID="73">
-     <WindowState Visible="True" X="353" Y="117" Width="83" Height="83"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="45"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="PocketUVBlue" ID="75">
-     <WindowState Visible="True" X="88" Y="206" Width="83" Height="83"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="46"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="PocketProPink" ID="78">
-     <WindowState Visible="True" X="353" Y="206" Width="83" Height="83"/>
-     <Appearance>
-      <BackgroundColor>4294902015</BackgroundColor>
-     </Appearance>
-     <Function ID="40"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="PocketProRed" ID="66">
+    <Button Caption="PocketProGobo2" ID="57">
      <WindowState Visible="True" X="176" Y="29" Width="83" Height="83"/>
      <Appearance>
-      <BackgroundColor>4294901760</BackgroundColor>
+      <BackgroundImage>pocketpro/gobo-2.png</BackgroundImage>
      </Appearance>
-     <Function ID="34"/>
+     <Function ID="50"/>
      <Action>Toggle</Action>
     </Button>
-    <Button Caption="PocketProRedOrange" ID="67">
+    <Button Caption="PocketProGobo3" ID="58">
      <WindowState Visible="True" X="265" Y="29" Width="83" Height="83"/>
      <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
+      <BackgroundImage>pocketpro/gobo-3.png</BackgroundImage>
      </Appearance>
-     <Function ID="42"/>
+     <Function ID="51"/>
      <Action>Toggle</Action>
     </Button>
-   </SoloFrame>
-   <Frame Caption="ShowControl" ID="32">
-    <Appearance>
-     <BackgroundColor>4288282778</BackgroundColor>
-    </Appearance>
-    <WindowState Visible="True" X="0" Y="0" Width="574" Height="338"/>
-    <AllowResize>True</AllowResize>
-    <ShowHeader>True</ShowHeader>
-    <ShowEnableButton>True</ShowEnableButton>
-    <Collapsed>False</Collapsed>
-    <Disabled>False</Disabled>
-    <Slider Caption="UV Control" ID="42" WidgetStyle="Slider" InvertedAppearance="false">
-     <WindowState Visible="True" X="471" Y="29" Width="73" Height="196"/>
+    <Button Caption="PocketProGobo7" ID="62">
+     <WindowState Visible="True" X="265" Y="117" Width="83" Height="83"/>
      <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
+      <BackgroundImage>pocketpro/gobo-7.png</BackgroundImage>
      </Appearance>
-     <Input ID="0" Universe="0" Channel="2"/>
-     <SliderMode ValueDisplayStyle="Exact">Level</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="0">
-      <Channel Fixture="11">0</Channel>
-      <Channel Fixture="11">9</Channel>
-      <Channel Fixture="12">0</Channel>
-      <Channel Fixture="12">9</Channel>
-      <Channel Fixture="13">0</Channel>
-      <Channel Fixture="13">9</Channel>
-      <Channel Fixture="14">0</Channel>
-      <Channel Fixture="14">9</Channel>
-     </Level>
-    </Slider>
-    <SpeedDial Caption="MasterSpeed" ID="33">
-     <WindowState Visible="True" X="73" Y="29" Width="392" Height="245"/>
-     <Visibility>644</Visibility>
-     <Time>393</Time>
-     <AbsoluteValue Minimum="0" Maximum="10000"/>
-     <Function FadeIn="0" FadeOut="0" Duration="6">1</Function>
-     <Function FadeIn="0" FadeOut="0" Duration="6">3</Function>
-     <Function FadeIn="0" FadeOut="0" Duration="6">33</Function>
-     <Function FadeIn="0" FadeOut="0" Duration="6">57</Function>
-     <Function FadeIn="0" FadeOut="0" Duration="6">79</Function>
-     <Function FadeIn="4" FadeOut="0" Duration="6">80</Function>
-     <Function FadeIn="1" FadeOut="0" Duration="6">96</Function>
-     <Input ID="1" Universe="0" Channel="143"/>
-    </SpeedDial>
-    <Button Caption="OperationMode" ID="34">
-     <WindowState Visible="True" X="0" Y="29" Width="73" Height="73"/>
-     <Appearance>
-      <BackgroundColor>4288322048</BackgroundColor>
-     </Appearance>
-     <Function ID="0"/>
+     <Function ID="55"/>
      <Action>Toggle</Action>
     </Button>
-    <Button Caption="FogOn" ID="35">
-     <WindowState Visible="True" X="471" Y="235" Width="88" Height="88"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="24"/>
-     <Action Override="0" ForceLTP="0">Flash</Action>
-     <Input ID="0" Universe="0" Channel="131"/>
-    </Button>
-   </Frame>
-   <SoloFrame Caption="PolarisLaserPattern" ID="21">
-    <Appearance>
-     <BackgroundColor>4278190080</BackgroundColor>
-    </Appearance>
-    <WindowState Visible="True" X="574" Y="0" Width="456" Height="309"/>
-    <AllowResize>True</AllowResize>
-    <ShowHeader>True</ShowHeader>
-    <ShowEnableButton>True</ShowEnableButton>
-    <Collapsed>False</Collapsed>
-    <Disabled>False</Disabled>
-    <Slider Caption="LaserMovement" ID="30" WidgetStyle="Slider" InvertedAppearance="false">
-     <WindowState Visible="True" X="368" Y="44" Width="73" Height="250"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Input ID="0" Universe="0" Channel="3"/>
-     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="Preset" Monitor="true">Level</SliderMode>
-     <Reset>
-      <Input ID="1" Universe="0" Channel="128"/>
-     </Reset>
-     <Level LowLimit="128" HighLimit="255" Value="0">
-      <Channel Fixture="0">9</Channel>
-      <Channel Fixture="1">9</Channel>
-     </Level>
-    </Slider>
-    <Button Caption="LaserPattern7" ID="28">
-     <WindowState Visible="True" X="176" Y="132" Width="83" Height="83"/>
-     <Appearance>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/laser7.png</BackgroundImage>
-     </Appearance>
-     <Function ID="31"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="LaserPattern3" ID="24">
-     <WindowState Visible="True" X="176" Y="44" Width="83" Height="83"/>
-     <Appearance>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/laser3.png</BackgroundImage>
-     </Appearance>
-     <Function ID="27"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="LaserPattern4" ID="25">
-     <WindowState Visible="True" X="265" Y="44" Width="83" Height="83"/>
-     <Appearance>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/laser4.png</BackgroundImage>
-     </Appearance>
-     <Function ID="28"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="LaserPattern1" ID="22">
-     <WindowState Visible="True" X="0" Y="44" Width="83" Height="83"/>
-     <Appearance>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/laser1.png</BackgroundImage>
-     </Appearance>
-     <Function ID="25"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="LaserPattern8" ID="29">
-     <WindowState Visible="True" X="265" Y="132" Width="83" Height="83"/>
-     <Appearance>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/laser8.png</BackgroundImage>
-     </Appearance>
-     <Function ID="32"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="LaserPattern6" ID="27">
-     <WindowState Visible="True" X="88" Y="132" Width="83" Height="83"/>
-     <Appearance>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/laser6.png</BackgroundImage>
-     </Appearance>
-     <Function ID="30"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="LaserPattern2" ID="23">
-     <WindowState Visible="True" X="88" Y="44" Width="83" Height="83"/>
-     <Appearance>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/laser2.png</BackgroundImage>
-     </Appearance>
-     <Function ID="26"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="LaserPattern5" ID="26">
-     <WindowState Visible="True" X="0" Y="132" Width="83" Height="83"/>
-     <Appearance>
-      <BackgroundImage>C:/Users/Kaiden Richardson/QLC+/Fixtures/polaris2/laser5.png</BackgroundImage>
-     </Appearance>
-     <Function ID="29"/>
-     <Action>Toggle</Action>
-    </Button>
-   </SoloFrame>
-   <Frame Caption="Strobes" ID="49">
-    <Appearance>
-     <BackgroundColor>4294946099</BackgroundColor>
-    </Appearance>
-    <WindowState Visible="True" X="1561" Y="0" Width="324" Height="324"/>
-    <AllowResize>True</AllowResize>
-    <ShowHeader>True</ShowHeader>
-    <ShowEnableButton>True</ShowEnableButton>
-    <Collapsed>False</Collapsed>
-    <Disabled>False</Disabled>
-    <Button Caption="OrcanA" ID="53">
-     <WindowState Visible="True" X="88" Y="117" Width="83" Height="83"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="85"/>
-     <Action Override="0" ForceLTP="0">Flash</Action>
-     <Input ID="0" Universe="0" Channel="129"/>
-    </Button>
-    <Button Caption="OrcanR" ID="50">
-     <WindowState Visible="True" X="0" Y="29" Width="83" Height="83"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="81"/>
-     <Action Override="0" ForceLTP="0">Flash</Action>
-     <Input ID="0" Universe="0" Channel="132"/>
-    </Button>
-    <Button Caption="PolarisHalfStrobe" ID="89">
-     <WindowState Visible="True" X="176" Y="117" Width="83" Height="83"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="87"/>
-     <Action Override="0" ForceLTP="0">Flash</Action>
-     <Input ID="0" Universe="0" Channel="135"/>
-    </Button>
-    <Button Caption="OrcanB" ID="54">
-     <WindowState Visible="True" X="176" Y="29" Width="83" Height="83"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="83"/>
-     <Action Override="0" ForceLTP="0">Flash</Action>
-     <Input ID="0" Universe="0" Channel="134"/>
-    </Button>
-    <Button Caption="OrcanW" ID="52">
-     <WindowState Visible="True" X="0" Y="117" Width="83" Height="83"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="84"/>
-     <Action Override="0" ForceLTP="0">Flash</Action>
-     <Input ID="0" Universe="0" Channel="128"/>
-    </Button>
-    <Button Caption="PolarisSparkle" ID="90">
-     <WindowState Visible="True" X="0" Y="206" Width="83" Height="83"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="96"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="OrcanG" ID="51">
+    <Button Caption="PocketProGobo1" ID="56">
      <WindowState Visible="True" X="88" Y="29" Width="83" Height="83"/>
      <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
+      <BackgroundImage>pocketpro/gobo-1.png</BackgroundImage>
      </Appearance>
-     <Function ID="82"/>
-     <Action Override="0" ForceLTP="0">Flash</Action>
-     <Input ID="0" Universe="0" Channel="133"/>
+     <Function ID="49"/>
+     <Action>Toggle</Action>
     </Button>
-   </Frame>
+   </SoloFrame>
    <Frame Caption="Polaris 2 Colour" ID="0">
     <Appearance>
      <BackgroundColor>4278190080</BackgroundColor>
@@ -3007,17 +3137,6 @@
       <Channel Fixture="1">7</Channel>
      </Level>
     </Slider>
-    <Slider Caption="PolarisR" ID="45" WidgetStyle="Knob" InvertedAppearance="false">
-     <WindowState Visible="True" X="309" Y="544" Width="147" Height="191"/>
-     <Appearance>
-      <BackgroundColor>4278190080</BackgroundColor>
-     </Appearance>
-     <Input ID="0" Universe="0" Channel="5"/>
-     <SliderMode ValueDisplayStyle="Exact" Monitor="true">Level</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="0">
-      <Channel Fixture="1">8</Channel>
-     </Level>
-    </Slider>
     <Slider Caption="PolarisL" ID="43" WidgetStyle="Knob" InvertedAppearance="false">
      <WindowState Visible="True" X="14" Y="544" Width="147" Height="191"/>
      <Appearance>
@@ -3028,14 +3147,24 @@
       <Channel Fixture="0">8</Channel>
      </Level>
     </Slider>
-    <Button Caption="Off" ID="19">
-     <WindowState Visible="True" X="441" Y="44" Width="83" Height="83"/>
+    <Slider Caption="PolarisR" ID="45" WidgetStyle="Knob" InvertedAppearance="false">
+     <WindowState Visible="True" X="309" Y="544" Width="147" Height="191"/>
      <Appearance>
       <BackgroundColor>4278190080</BackgroundColor>
      </Appearance>
-     <Function ID="18"/>
+     <Input ID="0" Universe="0" Channel="4"/>
+     <SliderMode ValueDisplayStyle="Exact" Monitor="true">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="1">8</Channel>
+     </Level>
+    </Slider>
+    <Button Caption="2ColourChase" ID="48">
+     <WindowState Visible="True" X="441" Y="250" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="79"/>
      <Action>Toggle</Action>
-     <Input ID="0" Universe="0" Channel="147"/>
     </Button>
     <Button Caption="1ColourChase" ID="47">
      <WindowState Visible="True" X="441" Y="147" Width="83" Height="83"/>
@@ -3045,13 +3174,14 @@
      <Function ID="80"/>
      <Action>Toggle</Action>
     </Button>
-    <Button Caption="2ColourChase" ID="48">
-     <WindowState Visible="True" X="441" Y="250" Width="83" Height="83"/>
+    <Button Caption="Off" ID="19">
+     <WindowState Visible="True" X="441" Y="44" Width="83" Height="83"/>
      <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
+      <BackgroundColor>4278190080</BackgroundColor>
      </Appearance>
-     <Function ID="79"/>
+     <Function ID="18"/>
      <Action>Toggle</Action>
+     <Input ID="0" Universe="0" Channel="151"/>
     </Button>
     <SoloFrame Caption="Violet" ID="18">
      <Appearance>
@@ -3063,23 +3193,110 @@
      <ShowEnableButton>True</ShowEnableButton>
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
+     <Button Caption="PolarisRemoveViolet" ID="17">
+      <WindowState Visible="True" X="14" Y="132" Width="83" Height="83"/>
+      <Appearance>
+       <BackgroundColor>4284219546</BackgroundColor>
+      </Appearance>
+      <Function ID="17"/>
+      <Action>Toggle</Action>
+      <Input ID="0" Universe="0" Channel="146"/>
+     </Button>
      <Button Caption="PolarisAddViolet" ID="16">
       <WindowState Visible="True" X="14" Y="44" Width="83" Height="83"/>
       <Appearance>
-       <BackgroundColor>4282664004</BackgroundColor>
+       <BackgroundColor>4288217343</BackgroundColor>
       </Appearance>
       <Function ID="14"/>
       <Action>Toggle</Action>
       <Input ID="0" Universe="0" Channel="150"/>
      </Button>
-     <Button Caption="PolarisRemoveViolet" ID="17">
+    </SoloFrame>
+    <SoloFrame Caption="White" ID="12">
+     <Appearance>
+      <BackgroundColor>4294967295</BackgroundColor>
+     </Appearance>
+     <WindowState Visible="True" X="14" Y="294" Width="117" Height="235"/>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>True</ShowHeader>
+     <ShowEnableButton>True</ShowEnableButton>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="PolarisAddWhite" ID="10">
+      <WindowState Visible="True" X="14" Y="44" Width="83" Height="83"/>
+      <Appearance>
+       <BackgroundColor>4294967295</BackgroundColor>
+      </Appearance>
+      <Function ID="12"/>
+      <Action>Toggle</Action>
+      <Input ID="0" Universe="0" Channel="148"/>
+     </Button>
+     <Button Caption="PolarisRemoveWhite" ID="11">
       <WindowState Visible="True" X="14" Y="132" Width="83" Height="83"/>
       <Appearance>
-       <BackgroundColor>4282664004</BackgroundColor>
+       <BackgroundColor>4287795858</BackgroundColor>
       </Appearance>
-      <Function ID="17"/>
+      <Function ID="15"/>
       <Action>Toggle</Action>
-      <Input ID="0" Universe="0" Channel="146"/>
+      <Input ID="0" Universe="0" Channel="144"/>
+     </Button>
+    </SoloFrame>
+    <SoloFrame Caption="Green" ID="6">
+     <Appearance>
+      <BackgroundColor>4281597747</BackgroundColor>
+     </Appearance>
+     <WindowState Visible="True" X="162" Y="44" Width="117" Height="235"/>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>True</ShowHeader>
+     <ShowEnableButton>True</ShowEnableButton>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="PolarisAddGreen" ID="4">
+      <WindowState Visible="True" X="14" Y="44" Width="83" Height="83"/>
+      <Appearance>
+       <BackgroundColor>4278255360</BackgroundColor>
+      </Appearance>
+      <Function ID="8"/>
+      <Action>Toggle</Action>
+      <Input ID="0" Universe="0" Channel="157"/>
+     </Button>
+     <Button Caption="PolarisRemoveGreen" ID="5">
+      <WindowState Visible="True" X="14" Y="132" Width="83" Height="83"/>
+      <Appearance>
+       <BackgroundColor>4278229504</BackgroundColor>
+      </Appearance>
+      <Function ID="9"/>
+      <Action>Toggle</Action>
+      <Input ID="0" Universe="0" Channel="153"/>
+     </Button>
+    </SoloFrame>
+    <SoloFrame Caption="Amber" ID="15">
+     <Appearance>
+      <BackgroundColor>4294946099</BackgroundColor>
+     </Appearance>
+     <WindowState Visible="True" X="162" Y="294" Width="117" Height="235"/>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>True</ShowHeader>
+     <ShowEnableButton>True</ShowEnableButton>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="PolarisAddAmber" ID="13">
+      <WindowState Visible="True" X="14" Y="44" Width="83" Height="83"/>
+      <Appearance>
+       <BackgroundColor>4294940928</BackgroundColor>
+      </Appearance>
+      <Function ID="13"/>
+      <Action>Toggle</Action>
+      <Input ID="0" Universe="0" Channel="149"/>
+     </Button>
+     <Button Caption="PolarisRemoveAmber" ID="14">
+      <WindowState Visible="True" X="14" Y="132" Width="83" Height="83"/>
+      <Appearance>
+       <BackgroundColor>4288306176</BackgroundColor>
+      </Appearance>
+      <Function ID="16"/>
+      <Action>Toggle</Action>
+      <Input ID="0" Universe="0" Channel="145"/>
      </Button>
     </SoloFrame>
     <SoloFrame Caption="Blue" ID="9">
@@ -3095,7 +3312,7 @@
      <Button Caption="PolarisRemoveBlue" ID="8">
       <WindowState Visible="True" X="14" Y="132" Width="83" Height="83"/>
       <Appearance>
-       <BackgroundColor>4282664004</BackgroundColor>
+       <BackgroundColor>4278190234</BackgroundColor>
       </Appearance>
       <Function ID="11"/>
       <Action>Toggle</Action>
@@ -3104,7 +3321,7 @@
      <Button Caption="PolarisAddBlue" ID="7">
       <WindowState Visible="True" X="14" Y="44" Width="83" Height="83"/>
       <Appearance>
-       <BackgroundColor>4282664004</BackgroundColor>
+       <BackgroundColor>4278190335</BackgroundColor>
       </Appearance>
       <Function ID="10"/>
       <Action>Toggle</Action>
@@ -3121,123 +3338,363 @@
      <ShowEnableButton>True</ShowEnableButton>
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
-     <Button Caption="PolarisRemoveRed" ID="3">
-      <WindowState Visible="True" X="14" Y="132" Width="83" Height="83"/>
-      <Appearance>
-       <BackgroundColor>4282664004</BackgroundColor>
-      </Appearance>
-      <Function ID="7"/>
-      <Action>Toggle</Action>
-      <Input ID="0" Universe="0" Channel="152"/>
-     </Button>
      <Button Caption="PolarisAddRed" ID="2">
       <WindowState Visible="True" X="14" Y="44" Width="83" Height="83"/>
       <Appearance>
-       <BackgroundColor>4282664004</BackgroundColor>
+       <BackgroundColor>4294901760</BackgroundColor>
       </Appearance>
       <Function ID="5"/>
       <Action>Toggle</Action>
       <Input ID="0" Universe="0" Channel="156"/>
      </Button>
-    </SoloFrame>
-    <SoloFrame Caption="Amber" ID="15">
-     <Appearance>
-      <BackgroundColor>4294946099</BackgroundColor>
-     </Appearance>
-     <WindowState Visible="True" X="162" Y="294" Width="117" Height="235"/>
-     <AllowResize>True</AllowResize>
-     <ShowHeader>True</ShowHeader>
-     <ShowEnableButton>True</ShowEnableButton>
-     <Collapsed>False</Collapsed>
-     <Disabled>False</Disabled>
-     <Button Caption="PolarisRemoveAmber" ID="14">
+     <Button Caption="PolarisRemoveRed" ID="3">
       <WindowState Visible="True" X="14" Y="132" Width="83" Height="83"/>
       <Appearance>
-       <BackgroundColor>4282664004</BackgroundColor>
+       <BackgroundColor>4288282624</BackgroundColor>
       </Appearance>
-      <Function ID="16"/>
+      <Function ID="7"/>
       <Action>Toggle</Action>
-      <Input ID="0" Universe="0" Channel="145"/>
-     </Button>
-     <Button Caption="PolarisAddAmber" ID="13">
-      <WindowState Visible="True" X="14" Y="44" Width="83" Height="83"/>
-      <Appearance>
-       <BackgroundColor>4282664004</BackgroundColor>
-      </Appearance>
-      <Function ID="13"/>
-      <Action>Toggle</Action>
-      <Input ID="0" Universe="0" Channel="149"/>
-     </Button>
-    </SoloFrame>
-    <SoloFrame Caption="Green" ID="6">
-     <Appearance>
-      <BackgroundColor>4281597747</BackgroundColor>
-     </Appearance>
-     <WindowState Visible="True" X="162" Y="44" Width="117" Height="235"/>
-     <AllowResize>True</AllowResize>
-     <ShowHeader>True</ShowHeader>
-     <ShowEnableButton>True</ShowEnableButton>
-     <Collapsed>False</Collapsed>
-     <Disabled>False</Disabled>
-     <Button Caption="PolarisAddGreen" ID="4">
-      <WindowState Visible="True" X="14" Y="44" Width="83" Height="83"/>
-      <Appearance>
-       <BackgroundColor>4282664004</BackgroundColor>
-      </Appearance>
-      <Function ID="8"/>
-      <Action>Toggle</Action>
-      <Input ID="0" Universe="0" Channel="157"/>
-     </Button>
-     <Button Caption="PolarisRemoveGreen" ID="5">
-      <WindowState Visible="True" X="14" Y="132" Width="83" Height="83"/>
-      <Appearance>
-       <BackgroundColor>4282664004</BackgroundColor>
-      </Appearance>
-      <Function ID="9"/>
-      <Action>Toggle</Action>
-      <Input ID="0" Universe="0" Channel="153"/>
-     </Button>
-    </SoloFrame>
-    <SoloFrame Caption="White" ID="12">
-     <Appearance>
-      <BackgroundColor>4294967295</BackgroundColor>
-     </Appearance>
-     <WindowState Visible="True" X="14" Y="294" Width="117" Height="235"/>
-     <AllowResize>True</AllowResize>
-     <ShowHeader>True</ShowHeader>
-     <ShowEnableButton>True</ShowEnableButton>
-     <Collapsed>False</Collapsed>
-     <Disabled>False</Disabled>
-     <Button Caption="PolarisAddWhite" ID="10">
-      <WindowState Visible="True" X="14" Y="44" Width="83" Height="83"/>
-      <Appearance>
-       <BackgroundColor>4282664004</BackgroundColor>
-      </Appearance>
-      <Function ID="12"/>
-      <Action>Toggle</Action>
-      <Input ID="0" Universe="0" Channel="148"/>
-     </Button>
-     <Button Caption="PolarisRemoveWhite" ID="11">
-      <WindowState Visible="True" X="14" Y="132" Width="83" Height="83"/>
-      <Appearance>
-       <BackgroundColor>4282664004</BackgroundColor>
-      </Appearance>
-      <Function ID="15"/>
-      <Action>Toggle</Action>
-      <Input ID="0" Universe="0" Channel="144"/>
+      <Input ID="0" Universe="0" Channel="152"/>
      </Button>
     </SoloFrame>
    </Frame>
-   <SoloFrame Caption="PolarisLaserColours" ID="31">
+   <Frame Caption="ShowControl" ID="32">
     <Appearance>
-     <BackgroundColor>4278190080</BackgroundColor>
+     <BackgroundColor>4288282778</BackgroundColor>
     </Appearance>
-    <WindowState Visible="True" X="574" Y="309" Width="368" Height="147"/>
+    <WindowState Visible="True" X="0" Y="0" Width="570" Height="285"/>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>True</ShowEnableButton>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
+    <Slider Caption="UV Control" ID="42" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="475" Y="31" Width="79" Height="142"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Input ID="0" Universe="0" Channel="2"/>
+     <SliderMode ValueDisplayStyle="Exact">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="6">
+      <Channel Fixture="11">0</Channel>
+      <Channel Fixture="11">9</Channel>
+      <Channel Fixture="12">0</Channel>
+      <Channel Fixture="12">9</Channel>
+      <Channel Fixture="13">0</Channel>
+      <Channel Fixture="13">9</Channel>
+      <Channel Fixture="14">0</Channel>
+      <Channel Fixture="14">9</Channel>
+     </Level>
+    </Slider>
+    <SpeedDial Caption="MasterSpeed" ID="33">
+     <WindowState Visible="True" X="73" Y="29" Width="392" Height="245"/>
+     <Visibility>644</Visibility>
+     <Time>945</Time>
+     <AbsoluteValue Minimum="0" Maximum="10000"/>
+     <Function FadeIn="6" FadeOut="6" Duration="6">1</Function>
+     <Function FadeIn="6" FadeOut="10" Duration="6">3</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="6">33</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="6">34</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="6">37</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="6">38</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="6">40</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="6">42</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="6">43</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="6">46</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="6">56</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="6">57</Function>
+     <Function FadeIn="1" FadeOut="1" Duration="6">79</Function>
+     <Function FadeIn="1" FadeOut="1" Duration="6">80</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="2">96</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="8">100</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="8">101</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="8">102</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="8">103</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="8">104</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="4">107</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="6">109</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="6">111</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="6">113</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="6">115</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="6">117</Function>
+     <Input ID="1" Universe="0" Channel="143"/>
+    </SpeedDial>
+    <Button Caption="OperationMode" ID="34">
+     <WindowState Visible="True" X="0" Y="29" Width="73" Height="73"/>
+     <Appearance>
+      <BackgroundColor>4288322048</BackgroundColor>
+     </Appearance>
+     <Function ID="0"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="HouseLights" ID="91">
+     <WindowState Visible="True" X="0" Y="110" Width="79" Height="79"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="19"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="FogOn" ID="35">
+     <WindowState Visible="True" X="475" Y="174" Width="88" Height="88"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="24"/>
+     <Action Override="0" ForceLTP="0">Flash</Action>
+     <Input ID="0" Universe="0" Channel="131"/>
+     <Input ID="0" Universe="0" Channel="147"/>
+    </Button>
+   </Frame>
+   <SoloFrame Caption="PolarisLaserPattern" ID="21">
+    <Appearance>
+     <BackgroundColor>4278190080</BackgroundColor>
+    </Appearance>
+    <WindowState Visible="True" X="570" Y="0" Width="459" Height="237"/>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Slider Caption="LaserMovement" ID="30" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="364" Y="47" Width="79" Height="174"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Input ID="0" Universe="0" Channel="3"/>
+     <SliderMode ValueDisplayStyle="Exact" Monitor="true">Level</SliderMode>
+     <Reset>
+      <Input ID="1" Universe="0" Channel="140"/>
+     </Reset>
+     <Level LowLimit="128" HighLimit="255" Value="0">
+      <Channel Fixture="0">9</Channel>
+      <Channel Fixture="1">9</Channel>
+     </Level>
+    </Slider>
+    <Button Caption="LaserPattern3" ID="24">
+     <WindowState Visible="True" X="176" Y="44" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/laser3.png</BackgroundImage>
+     </Appearance>
+     <Function ID="27"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="LaserPattern6" ID="27">
+     <WindowState Visible="True" X="88" Y="132" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/laser6.png</BackgroundImage>
+     </Appearance>
+     <Function ID="30"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="LaserPattern7" ID="28">
+     <WindowState Visible="True" X="176" Y="132" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/laser7.png</BackgroundImage>
+     </Appearance>
+     <Function ID="31"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="LaserPattern8" ID="29">
+     <WindowState Visible="True" X="265" Y="132" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/laser8.png</BackgroundImage>
+     </Appearance>
+     <Function ID="32"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="LaserPattern4" ID="25">
+     <WindowState Visible="True" X="265" Y="44" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/laser4.png</BackgroundImage>
+     </Appearance>
+     <Function ID="28"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="LaserPattern2" ID="23">
+     <WindowState Visible="True" X="88" Y="44" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/laser2.png</BackgroundImage>
+     </Appearance>
+     <Function ID="26"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="LaserPattern1" ID="22">
+     <WindowState Visible="True" X="0" Y="44" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/laser1.png</BackgroundImage>
+     </Appearance>
+     <Function ID="25"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="LaserPattern5" ID="26">
+     <WindowState Visible="True" X="0" Y="132" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundImage>C:/Users/kaide/QLC+/Fixtures/polaris2/laser5.png</BackgroundImage>
+     </Appearance>
+     <Function ID="29"/>
+     <Action>Toggle</Action>
+    </Button>
+   </SoloFrame>
+   <SoloFrame Caption="PocketProColour" ID="63">
+    <Appearance>
+     <BackgroundColor>4278190234</BackgroundColor>
+    </Appearance>
+    <WindowState Visible="True" X="459" Y="380" Width="441" Height="294"/>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="PocketProWhiteRed" ID="65">
+     <WindowState Visible="True" X="88" Y="29" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="41"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="PocketProRed" ID="66">
+     <WindowState Visible="True" X="176" Y="29" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundColor>4294901760</BackgroundColor>
+     </Appearance>
+     <Function ID="34"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="PocketProOrange" ID="68">
+     <WindowState Visible="True" X="353" Y="29" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundColor>4294940928</BackgroundColor>
+     </Appearance>
+     <Function ID="35"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="PocketProYellow" ID="70">
+     <WindowState Visible="True" X="88" Y="117" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundColor>4294967040</BackgroundColor>
+     </Appearance>
+     <Function ID="36"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="PocketProPink" ID="78">
+     <WindowState Visible="True" X="353" Y="206" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundColor>4294902015</BackgroundColor>
+     </Appearance>
+     <Function ID="40"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="PocketProBluePink" ID="77">
+     <WindowState Visible="True" X="265" Y="206" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="47"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="PocketProGreenUV" ID="73">
+     <WindowState Visible="True" X="353" Y="117" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="45"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="PocketProGreen" ID="72">
+     <WindowState Visible="True" X="265" Y="117" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundColor>4278255360</BackgroundColor>
+     </Appearance>
+     <Function ID="37"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="PocketProWhite" ID="64">
+     <WindowState Visible="True" X="0" Y="29" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundColor>4294967295</BackgroundColor>
+     </Appearance>
+     <Function ID="56"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="PocketProBlue" ID="76">
+     <WindowState Visible="True" X="176" Y="206" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundColor>4278255615</BackgroundColor>
+     </Appearance>
+     <Function ID="39"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="PocketProRedOrange" ID="67">
+     <WindowState Visible="True" X="265" Y="29" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="42"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="PocketProYellowGreen" ID="71">
+     <WindowState Visible="True" X="176" Y="117" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="44"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="PocketUVBlue" ID="75">
+     <WindowState Visible="True" X="88" Y="206" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="46"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="PocketProOrangeYellow" ID="69">
+     <WindowState Visible="True" X="0" Y="117" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="43"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="PocketProUV" ID="74">
+     <WindowState Visible="True" X="0" Y="206" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundColor>4289541119</BackgroundColor>
+     </Appearance>
+     <Function ID="38"/>
+     <Action>Toggle</Action>
+    </Button>
+   </SoloFrame>
+   <SoloFrame Caption="PolarisLaserColours" ID="31">
+    <Appearance>
+     <BackgroundColor>4278190080</BackgroundColor>
+    </Appearance>
+    <WindowState Visible="True" X="570" Y="237" Width="368" Height="147"/>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="LaserGreen" ID="38">
+     <WindowState Visible="True" X="191" Y="44" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundColor>4278255360</BackgroundColor>
+     </Appearance>
+     <Function ID="22"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="0" Channel="138"/>
+    </Button>
+    <Button Caption="LaserRed" ID="37">
+     <WindowState Visible="True" X="103" Y="44" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundColor>4294901760</BackgroundColor>
+     </Appearance>
+     <Function ID="21"/>
+     <Action>Toggle</Action>
+     <Input ID="0" Universe="0" Channel="137"/>
+    </Button>
     <Button Caption="LaserOff" ID="36">
      <WindowState Visible="True" X="14" Y="44" Width="83" Height="83"/>
      <Appearance>
@@ -3256,97 +3713,217 @@
      <Action>Toggle</Action>
      <Input ID="0" Universe="0" Channel="139"/>
     </Button>
-    <Button Caption="LaserRed" ID="37">
-     <WindowState Visible="True" X="103" Y="44" Width="83" Height="83"/>
-     <Appearance>
-      <BackgroundColor>4294901760</BackgroundColor>
-     </Appearance>
-     <Function ID="21"/>
-     <Action>Toggle</Action>
-     <Input ID="0" Universe="0" Channel="137"/>
-    </Button>
-    <Button Caption="LaserGreen" ID="38">
-     <WindowState Visible="True" X="191" Y="44" Width="83" Height="83"/>
-     <Appearance>
-      <BackgroundColor>4278255360</BackgroundColor>
-     </Appearance>
-     <Function ID="22"/>
-     <Action>Toggle</Action>
-     <Input ID="0" Universe="0" Channel="138"/>
-    </Button>
    </SoloFrame>
-   <SoloFrame Caption="PocketProGobos" ID="46">
+   <Matrix Caption="PocketProIntensity" ID="88">
+    <WindowState Visible="True" X="459" Y="680" Width="294" Height="132"/>
     <Appearance>
      <BackgroundColor>4278190234</BackgroundColor>
     </Appearance>
-    <WindowState Visible="True" X="368" Y="456" Width="353" Height="206"/>
+    <Function ID="57" InstantApply="true"/>
+    <Visibility>15</Visibility>
+   </Matrix>
+   <Button Caption="PocketProRotate" ID="41">
+    <WindowState Visible="True" X="902" Y="411" Width="89" Height="89"/>
+    <Appearance>
+     <BackgroundColor>4282664004</BackgroundColor>
+    </Appearance>
+    <Function ID="117"/>
+    <Action>Toggle</Action>
+   </Button>
+   <Button Caption="LaserChase" ID="20">
+    <WindowState Visible="True" X="934" Y="237" Width="88" Height="88"/>
+    <Appearance>
+     <BackgroundColor>4282664004</BackgroundColor>
+    </Appearance>
+    <Function ID="33"/>
+    <Action>Toggle</Action>
+   </Button>
+   <Matrix Caption="RGBBar Colour" ID="40">
+    <WindowState Visible="True" X="0" Y="285" Width="364" Height="142" Z="1"/>
+    <Appearance>
+     <BackgroundColor>4288282624</BackgroundColor>
+    </Appearance>
+    <Function ID="1" InstantApply="true"/>
+    <Visibility>255</Visibility>
+    <Input ID="0" Universe="0" Channel="0"/>
+   </Matrix>
+   <Frame Caption="Strobes" ID="49">
+    <Appearance>
+     <BackgroundColor>4294946099</BackgroundColor>
+    </Appearance>
+    <WindowState Visible="True" X="760" Y="680" Width="253" Height="300"/>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>True</ShowEnableButton>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Button Caption="PocketProGobo2" ID="57">
-     <WindowState Visible="True" X="176" Y="29" Width="83" Height="83"/>
+    <Button Caption="OrcanW" ID="52">
+     <WindowState Visible="True" X="0" Y="205" Width="83" Height="83"/>
      <Appearance>
-      <BackgroundImage>pocketpro/gobo-2.png</BackgroundImage>
+      <BackgroundColor>4282664004</BackgroundColor>
      </Appearance>
-     <Function ID="50"/>
+     <Function ID="84"/>
+     <Action Override="0" ForceLTP="0">Flash</Action>
+     <Input ID="0" Universe="0" Channel="128"/>
+    </Button>
+    <Button Caption="OrcanA" ID="53">
+     <WindowState Visible="True" X="79" Y="205" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="85"/>
+     <Action Override="0" ForceLTP="0">Flash</Action>
+     <Input ID="0" Universe="0" Channel="129"/>
+    </Button>
+    <Button Caption="OrcanB" ID="54">
+     <WindowState Visible="True" X="158" Y="126" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="83"/>
+     <Action Override="0" ForceLTP="0">Flash</Action>
+     <Input ID="0" Universe="0" Channel="134"/>
+    </Button>
+    <Button Caption="PolarisHalfStrobe" ID="89">
+     <WindowState Visible="True" X="158" Y="205" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="87"/>
+     <Action Override="0" ForceLTP="0">Flash</Action>
+     <Input ID="0" Universe="0" Channel="135"/>
+    </Button>
+    <Button Caption="OrcanG" ID="51">
+     <WindowState Visible="True" X="79" Y="126" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="82"/>
+     <Action Override="0" ForceLTP="0">Flash</Action>
+     <Input ID="0" Universe="0" Channel="133"/>
+    </Button>
+    <Button Caption="PolarisSparkle" ID="90">
+     <WindowState Visible="True" X="0" Y="47" Width="83" Height="83"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="96"/>
      <Action>Toggle</Action>
     </Button>
-    <Button Caption="PocketProGobo4" ID="59">
-     <WindowState Visible="True" X="0" Y="117" Width="83" Height="83"/>
+    <Button Caption="OrcanR" ID="50">
+     <WindowState Visible="True" X="0" Y="126" Width="83" Height="83"/>
      <Appearance>
-      <BackgroundImage>pocketpro/gobo-4.png</BackgroundImage>
+      <BackgroundColor>4282664004</BackgroundColor>
      </Appearance>
-     <Function ID="52"/>
+     <Function ID="81"/>
+     <Action Override="0" ForceLTP="0">Flash</Action>
+     <Input ID="0" Universe="0" Channel="132"/>
+    </Button>
+   </Frame>
+   <SoloFrame Caption="Pocket Pro EFX" ID="93">
+    <Appearance>
+     <BackgroundColor>4278190234</BackgroundColor>
+    </Appearance>
+    <WindowState Visible="True" X="1013" Y="744" Width="380" Height="221"/>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="New EFX 102" ID="97">
+     <WindowState Visible="True" X="285" Y="31" Width="89" Height="89"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="102"/>
      <Action>Toggle</Action>
     </Button>
-    <Button Caption="PocketProGoboNone" ID="55">
-     <WindowState Visible="True" X="0" Y="29" Width="83" Height="83"/>
+    <Button Caption="New EFX 101" ID="96">
+     <WindowState Visible="True" X="190" Y="31" Width="89" Height="89"/>
      <Appearance>
-      <BackgroundImage>pocketpro/gobo-open.png</BackgroundImage>
+      <BackgroundColor>4282664004</BackgroundColor>
      </Appearance>
-     <Function ID="48"/>
+     <Function ID="101"/>
      <Action>Toggle</Action>
     </Button>
-    <Button Caption="PocketProGobo1" ID="56">
-     <WindowState Visible="True" X="88" Y="29" Width="83" Height="83"/>
+    <Button Caption="StealthSpotStop" ID="94">
+     <WindowState Visible="True" X="0" Y="31" Width="89" Height="89"/>
      <Appearance>
-      <BackgroundImage>pocketpro/gobo-1.png</BackgroundImage>
+      <BackgroundColor>4282664004</BackgroundColor>
      </Appearance>
-     <Function ID="49"/>
+     <Function ID="105"/>
      <Action>Toggle</Action>
     </Button>
-    <Button Caption="PocketProGobo5" ID="60">
-     <WindowState Visible="True" X="88" Y="117" Width="83" Height="83"/>
+    <Button Caption="Dance Circle" ID="98">
+     <WindowState Visible="True" X="0" Y="126" Width="89" Height="89"/>
      <Appearance>
-      <BackgroundImage>pocketpro/gobo-5.png</BackgroundImage>
+      <BackgroundColor>4282664004</BackgroundColor>
      </Appearance>
-     <Function ID="53"/>
+     <Function ID="123"/>
      <Action>Toggle</Action>
     </Button>
-    <Button Caption="PocketProGobo3" ID="58">
-     <WindowState Visible="True" X="265" Y="29" Width="83" Height="83"/>
+    <Button Caption="New EFX 100" ID="95">
+     <WindowState Visible="True" X="95" Y="31" Width="89" Height="89"/>
      <Appearance>
-      <BackgroundImage>pocketpro/gobo-3.png</BackgroundImage>
+      <BackgroundColor>4282664004</BackgroundColor>
      </Appearance>
-     <Function ID="51"/>
+     <Function ID="100"/>
      <Action>Toggle</Action>
     </Button>
-    <Button Caption="PocketProGobo7" ID="62">
-     <WindowState Visible="True" X="265" Y="117" Width="83" Height="83"/>
+    <Button Caption="StealthSpotUp" ID="106">
+     <WindowState Visible="True" X="95" Y="126" Width="89" Height="89"/>
      <Appearance>
-      <BackgroundImage>pocketpro/gobo-7.png</BackgroundImage>
+      <BackgroundColor>4282664004</BackgroundColor>
      </Appearance>
-     <Function ID="55"/>
+     <Function ID="124"/>
      <Action>Toggle</Action>
     </Button>
-    <Button Caption="PocketProGobo6" ID="61">
-     <WindowState Visible="True" X="176" Y="117" Width="83" Height="83"/>
+   </SoloFrame>
+   <SoloFrame Caption="RGB 4 Bar Intensity" ID="100">
+    <WindowState Visible="True" X="0" Y="427" Width="364" Height="126" Z="-1"/>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="RGB-4Bars-Intensity FillUnfill" ID="103">
+     <WindowState Visible="True" X="158" Y="31" Width="89" Height="89"/>
      <Appearance>
-      <BackgroundImage>pocketpro/gobo-6.png</BackgroundImage>
+      <BackgroundColor>4282664004</BackgroundColor>
      </Appearance>
-     <Function ID="54"/>
+     <Function ID="111"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="RGB-4Bars-Intensity Solid" ID="101">
+     <WindowState Visible="True" X="0" Y="31" Width="89" Height="89"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="107"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="RGB-4Bars-Intensity EvenOdd" ID="102">
+     <WindowState Visible="True" X="79" Y="31" Width="89" Height="89"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="109"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="RGB-4Bars-Intensity RandomFill" ID="104">
+     <WindowState Visible="True" X="237" Y="31" Width="89" Height="89"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="113"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="RGB-4Bars-Intensity Waves" ID="105">
+     <WindowState Visible="True" X="316" Y="31" Width="89" Height="89"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="115"/>
      <Action>Toggle</Action>
     </Button>
    </SoloFrame>
@@ -3374,22 +3951,6 @@
      <Channel Fixture="5">7</Channel>
     </Level>
    </Slider>
-   <Button Caption="HouseLights" ID="81">
-    <WindowState Visible="True" X="29" Y="58" Width="83" Height="83"/>
-    <Appearance>
-     <BackgroundColor>4282664004</BackgroundColor>
-    </Appearance>
-    <Function ID="19"/>
-    <Action>Toggle</Action>
-   </Button>
-   <Button Caption="OperationMode" ID="82">
-    <WindowState Visible="True" X="117" Y="58" Width="83" Height="83"/>
-    <Appearance>
-     <BackgroundColor>4282664004</BackgroundColor>
-    </Appearance>
-    <Function ID="0"/>
-    <Action>Toggle</Action>
-   </Button>
    <XYPad Caption="XY Pad 86" ID="85" InvertedAppearance="0">
     <WindowState Visible="True" X="589" Y="324" Width="245" Height="245"/>
     <Appearance>
@@ -3400,11 +3961,28 @@
      <Axis ID="Y" LowLimit="0" HighLimit="1" Reverse="False"/>
     </Fixture>
     <Window hMin="0" hMax="255" vMin="0" vMax="255"/>
-    <Pan Position="0">
+    <Pan Position="60.6758">
      <Input ID="0" Universe="0" Channel="12"/>
     </Pan>
-    <Tilt Position="0">
+    <Tilt Position="22.2227">
      <Input ID="2" Universe="0" Channel="13"/>
+    </Tilt>
+   </XYPad>
+   <XYPad Caption="XY Pad 84" ID="83" InvertedAppearance="0">
+    <WindowState Visible="True" X="44" Y="324" Width="245" Height="245"/>
+    <Appearance>
+     <Font>Roboto Condensed,24,-1,5,700,0,0,0,0,0,0,0,0,0,0,1</Font>
+    </Appearance>
+    <Fixture ID="2" Head="0">
+     <Axis ID="X" LowLimit="0" HighLimit="1" Reverse="False"/>
+     <Axis ID="Y" LowLimit="0" HighLimit="1" Reverse="False"/>
+    </Fixture>
+    <Window hMin="0" hMax="255" vMin="0" vMax="255"/>
+    <Pan Position="48.7188">
+     <Input ID="0" Universe="0" Channel="6"/>
+    </Pan>
+    <Tilt Position="20.4492">
+     <Input ID="2" Universe="0" Channel="7"/>
     </Tilt>
    </XYPad>
    <XYPad Caption="XY Pad 85" ID="84" InvertedAppearance="0">
@@ -3417,10 +3995,10 @@
      <Axis ID="Y" LowLimit="0" HighLimit="1" Reverse="False"/>
     </Fixture>
     <Window hMin="0" hMax="255" vMin="0" vMax="255"/>
-    <Pan Position="0">
+    <Pan Position="56.0859">
      <Input ID="0" Universe="0" Channel="8"/>
     </Pan>
-    <Tilt Position="0">
+    <Tilt Position="20.1016">
      <Input ID="2" Universe="0" Channel="9"/>
     </Tilt>
    </XYPad>
@@ -3434,29 +4012,45 @@
      <Axis ID="Y" LowLimit="0" HighLimit="1" Reverse="False"/>
     </Fixture>
     <Window hMin="0" hMax="255" vMin="0" vMax="255"/>
-    <Pan Position="0">
+    <Pan Position="50.1133">
      <Input ID="0" Universe="0" Channel="14"/>
-     <Input ID="0" Universe="0" Channel="15"/>
     </Pan>
-    <Tilt Position="0"/>
-   </XYPad>
-   <XYPad Caption="XY Pad 84" ID="83" InvertedAppearance="0">
-    <WindowState Visible="True" X="44" Y="324" Width="245" Height="245"/>
-    <Appearance>
-     <Font>Roboto Condensed,24,-1,5,700,0,0,0,0,0,0,0,0,0,0,1</Font>
-    </Appearance>
-    <Fixture ID="2" Head="0">
-     <Axis ID="X" LowLimit="0" HighLimit="1" Reverse="False"/>
-     <Axis ID="Y" LowLimit="0" HighLimit="1" Reverse="False"/>
-    </Fixture>
-    <Window hMin="0" hMax="255" vMin="0" vMax="255"/>
-    <Pan Position="0">
-     <Input ID="0" Universe="0" Channel="6"/>
-    </Pan>
-    <Tilt Position="0">
-     <Input ID="2" Universe="0" Channel="7"/>
+    <Tilt Position="22.2227">
+     <Input ID="2" Universe="0" Channel="15"/>
     </Tilt>
    </XYPad>
+   <Button Caption="New EFX 100" ID="92">
+    <WindowState Visible="True" X="522" Y="95" Width="89" Height="89"/>
+    <Appearance>
+     <BackgroundColor>4282664004</BackgroundColor>
+    </Appearance>
+    <Function ID="102"/>
+    <Action>Toggle</Action>
+   </Button>
+   <Button Caption="OperationMode" ID="82">
+    <WindowState Visible="True" X="117" Y="58" Width="83" Height="83"/>
+    <Appearance>
+     <BackgroundColor>4282664004</BackgroundColor>
+    </Appearance>
+    <Function ID="0"/>
+    <Action>Toggle</Action>
+   </Button>
+   <Button Caption="HouseLights" ID="81">
+    <WindowState Visible="True" X="29" Y="58" Width="83" Height="83"/>
+    <Appearance>
+     <BackgroundColor>4282664004</BackgroundColor>
+    </Appearance>
+    <Function ID="19"/>
+    <Action>Toggle</Action>
+   </Button>
+   <Button Caption="Button 100" ID="99">
+    <WindowState Visible="True" X="744" Y="110" Width="89" Height="89"/>
+    <Appearance>
+     <BackgroundColor>4282664004</BackgroundColor>
+    </Appearance>
+    <Function ID="4294967295"/>
+    <Action>Toggle</Action>
+   </Button>
   </Frame>
  </VirtualConsole>
 </Workspace>
